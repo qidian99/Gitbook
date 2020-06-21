@@ -13,5 +13,5 @@
 
 ## News
 
-* [Gitbook on Y-combinator](news/gitbook-on-y-combinator.md)
+* [Technology](news/technology.md)
 
