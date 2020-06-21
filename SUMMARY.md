@@ -10,6 +10,7 @@
 ## Readings
 
 * [The Design of Everyday Things](readings/the-design-of-everyday-things.md)
+* [Zero to One](readings/zero-to-one.md)
 
 ## News
 
