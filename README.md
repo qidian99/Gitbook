@@ -32,7 +32,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ### 微信小程序论坛
 
-* 使用mp-vue，Node，Apollo，GraphQL开发
+* 个人solo项目，使用mp-vue，Node，Apollo，GraphQL开发
 * 提供发帖，桶存储，点赞，评论，推送，个人档案，Socket实时通讯等功能
 * 前端 \(milestone\): [https://github.com/qidian99/Knowledge-Master](https://github.com/qidian99/Knowledge-Master)
 * 后端 \(milestone\): [https://github.com/qidian99/Knowledge-Master-Backend](https://github.com/qidian99/Knowledge-Master-Backend)
