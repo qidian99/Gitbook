@@ -103,7 +103,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 * Database Systems: The Complete Book \(2nd edition\), by Hector Garcia-Molina, Jennifer Widom, and Jeffrey Ullman.
 * [Computer Networks: A Systems Approach \(5th edition\) by Peterson and Davie](http://www.sciencedirect.com/science/book/9780123850591)
 
-### **Why Blue**
+## **Why Blue**
 
 > **Blue** is the color of the sky and sea. It is often associated with depth and stability. It symbolizes trust, loyalty, wisdom, confidence, intelligence, faith, truth, and heaven. **Blue** is considered beneficial to the mind and body. It slows human metabolism and produces a calming effect.
 
