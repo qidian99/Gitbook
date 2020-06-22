@@ -1,3 +1,7 @@
+---
+description: UCSD数据库基础课系列C
+---
+
 # UCSD CSE132C
 
 ## Topic 1: Storage Management
