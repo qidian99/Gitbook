@@ -86,7 +86,14 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 * UCSD CSE132A
 * UCSD CSE132B
 * UCSD CSE132C
+
+  {% page-ref page="courses/ucsd-cse132c.md" %}
+
 * CMU 15-721
+
+  {% page-ref page="courses/cmu-15-721.md" %}
+
+
 
 ## 设计&阅读
 
