@@ -99,9 +99,11 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ### Summer 2020
 
-目前在阅读[The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things)这本书并批注。
+目前在阅读[The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things)这本书并批注
 
 后续计划看Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One)
+
+Unix编程艺术，从分布式实验室公众号被安利
 
 以及一些课程书
 
