@@ -22,3 +22,7 @@ description: Starting from 2020/06/16
 
 {% file src="../.gitbook/assets/design-chapter-4.pdf" caption="Mindmap" %}
 
+## Chapter 5: Human Error? No, Bad Design
+
+{% file src="../.gitbook/assets/design-chapter-5.pdf" caption="Mindmap" %}
+
