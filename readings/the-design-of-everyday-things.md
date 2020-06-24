@@ -26,3 +26,9 @@ description: Starting from 2020/06/16
 
 {% file src="../.gitbook/assets/design-chapter-5.pdf" caption="Mindmap" %}
 
+## Chapter 6: Design Thinking
+
+{% file src="../.gitbook/assets/design-chapter-6.pdf" caption="Mindmap" %}
+
+
+
