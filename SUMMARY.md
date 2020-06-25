@@ -16,3 +16,7 @@
 
 * [Technology](news/technology.md)
 
+## Projects
+
+* [Drupal 7](projects/drupal-7.md)
+
