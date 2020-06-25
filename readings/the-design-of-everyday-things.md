@@ -30,5 +30,9 @@ description: Starting from 2020/06/16
 
 {% file src="../.gitbook/assets/design-chapter-6.pdf" caption="Mindmap" %}
 
+## Chapter 7: Design in the World of Business
 
+{% file src="../.gitbook/assets/design-chapter-7.pdf" caption="Mindmap" %}
+
+人始终是具有社会属性的，设计也是要经世致用的。这本书将设计与不同的因素相结合，从设计原理概念，人类心理行为，社会文化习俗，商业市场需求，政治经济环境，时代科技进步的角度全面的分析了如何进行设计，何为好的设计。
 
