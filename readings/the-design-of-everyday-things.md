@@ -1,5 +1,5 @@
 ---
-description: Starting from 2020/06/16
+description: 2020/06/16 to 2020/06/24
 ---
 
 # The Design of Everyday Things
