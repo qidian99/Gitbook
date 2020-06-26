@@ -4,7 +4,7 @@
 
 ### 用Drupal实现增删改查 \(2020/06/25 - 2020/06/26\)
 
-{% embed url="https://diqi.gitbook.io/drupal/tutorials/use-drupal-to-build-a-crud-api" %}
+{% embed url="https://diqi.gitbook.io/drupal/tutorial/drupal-custom-module-tutorial" caption="Tutorial Link" %}
 
 #### 大纲
 
