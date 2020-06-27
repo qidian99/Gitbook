@@ -99,14 +99,21 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ### Summer 2020
 
-* [The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things) \(2020/06/24\)
+* [The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things) \(2020/06/16\)
 
   {% page-ref page="readings/the-design-of-everyday-things.md" %}
 
-* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(计划于2020/06/25开始）
-* Unix编程艺术，从分布式实验室公众号被安利
+* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(2020/06/25）
 
-课程书
+  {% page-ref page="readings/zero-to-one.md" %}
+
+* Drupal 7 Module Development \(2020/06/26）
+
+{% embed url="https://diqi.gitbook.io/drupal/book/drupal-7-module-development" %}
+
+* Unix编程艺术，Recommended by 分布式实验室公众号
+
+### 课程书
 
 * [An Introduction to Stochastic Modeling](https://roger.ucsd.edu/search~S9?/aPinsky%2C+Mark+A.%2C+1940-+author/apinsky+mark+a+1940+author/-3%2C-1%2C0%2CE/frameset&FF=apinsky+mark+a+1940+author&1%2C1%2C), by Mark A. Pinsky and Samuel Karlin; 4th edition
 * Database Management Systems \(3rd edition\), by Raghu Ramakrishnan and Johannes Gehrke \(aka the "cow book"\).

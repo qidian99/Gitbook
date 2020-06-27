@@ -11,6 +11,7 @@
 
 * [The Design of Everyday Things](readings/the-design-of-everyday-things.md)
 * [Zero to One](readings/zero-to-one.md)
+* [Drupal 7 Module Development](readings/drupal-7-module-development.md)
 
 ## News
 
