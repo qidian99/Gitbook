@@ -4,6 +4,8 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 # Zero to One
 
+### 
+
 ### Preface
 
 {% file src="../.gitbook/assets/zero-to-one\_preface.pdf" caption="思维导图" %}
