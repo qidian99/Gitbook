@@ -99,19 +99,19 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ### Summer 2020
 
-* [The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things) \(2020/06/16\)
+* [The Design of Everyday Things](https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things) \(2020/06/16 - 2020/06/24\)
 
   {% page-ref page="readings/the-design-of-everyday-things.md" %}
 
-* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(2020/06/25）
+* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(2020/06/25 - Present）
 
   {% page-ref page="readings/zero-to-one.md" %}
 
-* Drupal 7 Module Development \(2020/06/26）
+* Drupal 7 Module Development \(2020/06/26 - 2020/06/27）
 
 {% embed url="https://diqi.gitbook.io/drupal/book/drupal-7-module-development" %}
 
-* Unix编程艺术，Recommended by 分布式实验室公众号
+* Unix编程艺术，Recommended by 分布式实验室公众号 \(Not started\)
 
 ### 课程书
 
