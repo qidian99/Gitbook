@@ -222,7 +222,7 @@ Parse error: syntax error, unexpected '?', expecting variable (T_VARIABLE) in /U
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
-Need to update the PHP \(I install the new version in Homebrew via `brew install php@7.4`
+Need to update the PHP. I install the new version in Homebrew via`brew install php@7.4`
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
