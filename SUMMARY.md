@@ -20,4 +20,9 @@
 ## Projects & Tutorials <a id="projects"></a>
 
 * [Drupal 7 Module Development](projects/drupal-7.md)
+* [Drupal如何与React集成](projects/drupal-ru-he-yu-react-ji-cheng.md)
+
+## Algorithms
+
+* [回溯](algorithms/hui-su.md)
 
