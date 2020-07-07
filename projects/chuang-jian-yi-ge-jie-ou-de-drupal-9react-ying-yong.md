@@ -8,7 +8,7 @@ description: 中文莫名乱码，所以笔记全英文
 
 {% embed url="https://medium.com/@purushotamrai/getting-started-with-reactjs-drupal-fully-decoupled-feae28a41a5d" %}
 
-![Coupled vs. Decoupled](../.gitbook/assets/image%20%282%29.png)
+![Coupled vs. Decoupled](../.gitbook/assets/image%20%284%29.png)
 
 We can see that in the decoupled way Drupal is exposing internal resources through its web services API. It makes me question:
 
@@ -103,13 +103,13 @@ Note that the drush is installed in the local directory. If want a global drush 
 
 The configuration of database when we call `./vendor/bin/drush si`
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 Add the export in `~/.bash_profile` and restart bash \(note: NOT .bashrc\):
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 I set the username and password in the file ~/.mysql.config and add the alias in .bash\_profile
 
@@ -119,7 +119,7 @@ alias mysql="/usr/local/mysql/bin/mysql --defaults-extra-file=~/.mysql.config"
 
 Test MySQL connection:
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 **Proceed with `drush si`**
 
@@ -133,7 +133,7 @@ Need to grant permission
 
 {% embed url="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" %}
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 Flush the privileges to make sure the user has active privileges by adding the following the mysql terminal:  
 `FLUSH PRIVILEGES;`
@@ -206,7 +206,7 @@ vendor/bin/drush en -y admin_toolbar admin_toolbar_tools jsonapi
 drush runserver
 ```
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 Error is thrown
 
@@ -218,13 +218,13 @@ Parse error: syntax error, unexpected '?', expecting variable (T_VARIABLE) in /U
 
 {% embed url="https://stackoverflow.com/questions/56510272/how-to-fix-php-parse-error-syntax-error-unexpected-on-laravel-5-8" %}
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 Need to update the PHP \(I install the new version in Homebrew via `brew install php@7.4`
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 Location: `/usr/local/opt/php@7.4/bin/php`
 
@@ -232,13 +232,13 @@ Location: `/usr/local/opt/php@7.4/bin/php`
 
 `/usr/local/opt/php@7.4/bin/php ./vendor/bin/drush serve`
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 I also created a file `drupal_start.sh` and copied the above script.
 
 啦啦啦
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 Initial tables
 
@@ -261,7 +261,7 @@ Initial tables
 
 **Add new content type and give the name as ‘Destination’.** Then add some sample destinations: 
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 ### **5. Review JSON web service API**
 
@@ -272,7 +272,7 @@ But it's better to visit the URL in Postman
 
 {% embed url="http://127.0.0.1:8888/jsonapi" %}
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 destination contents are available as JSON data on 
 
@@ -547,5 +547,250 @@ destination contents are available as JSON data on
 
 **轻车熟路**
 
-\*\*\*\*
+```text
+npx create-react-app react_app
+cd react_app
+npm start
+```
+
+Folder `public` contains public assets and index.html file and src directory contains `index.js` which renders React Application into your website.
+
+### **React Concepts**
+
+1. **Components**
+   * 帮助我们实现Atomic前端开发（由小组成大）
+2. **Props**
+   * 传进来的参数
+3. **State**
+   * 状态
+4. **JSX \(Javascript XML）**
+   * Shortcut for creating elements \(div\) and store them in variables
+
+## Step 3: Define React Components <a id="c7b7"></a>
+
+> We are building Travel Destinations Listing Application, we basically are showing Destination Item which can be thought of the atomic level element or component as per React vocabulary. Multiple Destination Items combined together generates Destination List and this Destination List is the main part of our App.
+
+ An overview of the React Components in our application:
+
+— App  
+— — DestinationList  
+— — — DestinationItem
+
+{% code title="src/Components/Destination/DestinationItem.js" %}
+```jsx
+import React from 'react';
+
+export default class DestinationItem extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h2>Travel Destination Title</h2>
+        <div>Travel Destination Description goes here</div>
+      </div>
+    );
+  }
+
+}
+```
+{% endcode %}
+
+
+
+{% code title="src/Components/Destination/DestinationList.js" %}
+```jsx
+import React from 'react';
+import DestinationItem from "./DestinationItem";
+
+export default class DestinationList extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h1>Here are your best Travel Destinations</h1>
+        <DestinationItem />
+      </div>
+    );
+  }
+}
+
+```
+{% endcode %}
+
+
+
+{% code title="src/App.js" %}
+```jsx
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import DestinationList from "./Components/Destination/DestinationList";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DestinationList/>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+{% endcode %}
+
+![](../.gitbook/assets/image%20%285%29.png)
+
+## Step 4: Fetch Data & Display <a id="6526"></a>
+
+### **1. Fetch Data**
+
+> We cannot modify the state directly. Instead, we update the state using the setState method. And to trigger all this we will use one lifecycle method ‘componentWillMount’ and this method is only called one time, which is before the initial render. Add a constructor in App.js as follows:
+
+{% code title="src/App.js" %}
+```jsx
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import DestinationList from "./Components/Destination/DestinationList";
+
+const LIST_URL = 'http://127.0.0.1:8888/jsonapi/node/destination';
+
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { data: null };
+    this.loadDestinations = this.loadDestinations.bind(this);
+    this.updateData = this.updateData.bind(this);
+  }
+
+  componentWillMount() {
+    this.loadDestinations();
+  }
+
+  loadDestinations() {
+    // Fetch Destinations.
+    fetch(LIST_URL, { mode: 'cors' })
+      .then(function (response) {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        this.updateData(data);
+      })
+      .catch(err => console.log('Fetching Destinations Failed', err));
+  }
+
+  updateData(responseData) {
+    this.setState({ data: responseData.data });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <DestinationList
+          data={this.state.data}
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+```
+{% endcode %}
+
+**Problem**: CORS
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+**Solution**: have CORS configured on /admin/config/services/cors \(deprecated, see below\)
+
+{% embed url="https://www.drupal.org/node/2715637" %}
+
+So we change `web/sites/default/default.services.yml` to be
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+> Find: .../sites/default/default.services.yml
+>
+> Make a copy and rename the copy to:
+>
+> .../sites/default/services.yml
+>
+> Find this part of the code: cors.config: enabled: false
+>
+> and replace with the following - cors.config: enabled: true
+>
+> Clear the cache.
+
+WORKED! 
+
+**NOTE: Default is only for restoring default settings!**
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+### **2. Display Data**
+
+Collect that data in DestinationList class in DestinationList.js file and after quick check create an array of DestinationItem passing the item.
+
+Using Array.map function to send the complete item using {…item} to DestinationItem class as props and key as item.id
+
+{% code title="src/Components/Destination/DestinationList.js" %}
+```jsx
+import React from 'react';
+import DestinationItem from "./DestinationItem";
+
+export default class DestinationList extends React.Component {
+
+  render() {
+    let { data } = this.props;
+    return (
+      <div>
+        <h1>Here are your best Travel Destinations</h1>
+        {data !== null &&
+          data !== undefined &&
+          data.length > 0 ?
+          data.map(item => <DestinationItem {...item} key={item.id} />)
+          :
+          <div>No destinations found.</div>
+        }
+      </div>
+    );
+  }
+}
+```
+{% endcode %}
+
+
+
+{% code title="src/Components/Destination/DestinationItem.js" %}
+```jsx
+import React from 'react';
+
+export default class DestinationItem extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h2>{this.props.attributes.title}</h2>
+        <div dangerouslySetInnerHTML={{__html: this.props.attributes.body.value}} />
+      </div>
+    );
+  }
+
+}
+```
+{% endcode %}
+
+![Done!](../.gitbook/assets/image%20%286%29.png)
+
+## Conclusion
+
+* Simple tutorial
+* Primarily deployment
+* Show the power of DevDesktop that bundle all the environment for you
 
