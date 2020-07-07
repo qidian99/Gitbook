@@ -8,7 +8,7 @@ description: 中文莫名乱码，所以笔记全英文
 
 {% embed url="https://medium.com/@purushotamrai/getting-started-with-reactjs-drupal-fully-decoupled-feae28a41a5d" %}
 
-![Coupled vs. Decoupled](../.gitbook/assets/image%20%281%29.png)
+![Coupled vs. Decoupled](../.gitbook/assets/image%20%282%29.png)
 
 We can see that in the decoupled way Drupal is exposing internal resources through its web services API. It makes me question:
 
@@ -103,13 +103,13 @@ Note that the drush is installed in the local directory. If want a global drush 
 
 The configuration of database when we call `./vendor/bin/drush si`
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 Add the export in `~/.bash_profile` and restart bash \(note: NOT .bashrc\):
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 I set the username and password in the file ~/.mysql.config and add the alias in .bash\_profile
 
@@ -119,7 +119,7 @@ alias mysql="/usr/local/mysql/bin/mysql --defaults-extra-file=~/.mysql.config"
 
 Test MySQL connection:
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 **Proceed with `drush si`**
 
@@ -133,7 +133,7 @@ Need to grant permission
 
 {% embed url="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" %}
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 Flush the privileges to make sure the user has active privileges by adding the following the mysql terminal:  
 `FLUSH PRIVILEGES;`
@@ -206,7 +206,7 @@ vendor/bin/drush en -y admin_toolbar admin_toolbar_tools jsonapi
 drush runserver
 ```
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 Error is thrown
 
@@ -218,9 +218,334 @@ Parse error: syntax error, unexpected '?', expecting variable (T_VARIABLE) in /U
 
 {% embed url="https://stackoverflow.com/questions/56510272/how-to-fix-php-parse-error-syntax-error-unexpected-on-laravel-5-8" %}
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
+Need to update the PHP \(I install the new version in Homebrew via `brew install php@7.4`
+
+![](../.gitbook/assets/image%20%2812%29.png)
+
+Location: `/usr/local/opt/php@7.4/bin/php`
+
+**So we need to specify the above PHP version**
+
+`/usr/local/opt/php@7.4/bin/php ./vendor/bin/drush serve`
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+I also created a file `drupal_start.sh` and copied the above script.
+
+啦啦啦
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+Initial tables
+
+`block_content`, `block_content__body`, `block_content_field_data`, `block_content_field_revision`, `block_content_revision`, `block_content_revision__body`, `cache_bootstrap`, `cache_config`, `cache_container`, `cache_data`, `cache_default`, `cache_discovery`, `cache_dynamic_page_cache`, `cache_entity`, `cache_menu`, `cache_page`, `cache_render`, `cachetags`, `comment`, `comment__comment_body`, `comment_entity_statistics`, `comment_field_data`, `config`, `file_managed`, `file_usage`, `flood`, `history`, `key_value`, `key_value_expire`, `menu_link_content`, `menu_link_content_data`, `menu_link_content_field_revision`, `menu_link_content_revision`, `menu_tree`, `node`, `node_access`, `node__body`, `node__comment`, `node_field_data`, `node__field_image`, `node_field_revision`, `node__field_tags`, `node_revision`, `node_revision__body`, `node_revision__comment`, `node_revision__field_image`, `node_revision__field_tags`, `path_alias`, `path_alias_revision`, `router`, `search_dataset`, `search_index`, `search_total`, `semaphore`, `sequences`, `sessions`, `shortcut`, `shortcut_field_data`, `shortcut_set_users`, `taxonomy_index`, `taxonomy_term_data`, `taxonomy_term_field_data`, `taxonomy_term_field_revision`, `taxonomy_term__parent`, `taxonomy_term_revision`, `taxonomy_term_revision__parent`, `user__roles`, `users`, `users_data`, `users_field_data`, `user__user_picture`, `watchdog`
+
+### **4. Create Content Type & some sample content**
+
+**Before that, create admin user**
+
+\*\*\*\*
+
+| drush user-create qidian --mail="diqi@ucsd.edu" --password="qidian"; drush user-add-role "administrator" adminuser |
+| :--- |
+
+
+  
+
+
+![](../.gitbook/assets/image.png)
+
+**Add new content type and give the name as ‘Destination’.** Then add some sample destinations: 
+
+![](../.gitbook/assets/image%20%288%29.png)
+
+### **5. Review JSON web service API**
+
+_JSON API module requires no configurations, as soon enabled it just works._
+
+We can visit our local website `${URL}/jsonapi`  
+But it's better to visit the URL in Postman
+
+{% embed url="http://127.0.0.1:8888/jsonapi" %}
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
-Need to update the PHP
+destination contents are available as JSON data on 
+
+{% embed url="http://127.0.0.1:8888/jsonapi/node/destination" %}
+
+{% code title="http://127.0.0.1:8888/jsonapi/node/destination" %}
+```javascript
+{
+    "jsonapi": {
+        "version": "1.0",
+        "meta": {
+            "links": {
+                "self": {
+                    "href": "http://jsonapi.org/format/1.0/"
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "type": "node--destination",
+            "id": "2fa2a231-de58-4bc2-90a7-3fe716d184f7",
+            "links": {
+                "self": {
+                    "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7?resourceVersion=id%3A1"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 1,
+                "drupal_internal__vid": 1,
+                "langcode": "en",
+                "revision_timestamp": "2020-07-07T19:10:57+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "UCSD",
+                "created": "2020-07-07T19:10:44+00:00",
+                "changed": "2020-07-07T19:10:57+00:00",
+                "promote": true,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "body": {
+                    "value": "<p>9450 Gilman Drive</p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>9450 Gilman Drive</p>",
+                    "summary": ""
+                }
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "112a4178-d925-4427-bb8e-e68247bac7be"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/node_type?resourceVersion=id%3A1"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/relationships/node_type?resourceVersion=id%3A1"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/revision_uid?resourceVersion=id%3A1"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/relationships/revision_uid?resourceVersion=id%3A1"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/uid?resourceVersion=id%3A1"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/2fa2a231-de58-4bc2-90a7-3fe716d184f7/relationships/uid?resourceVersion=id%3A1"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--destination",
+            "id": "f2aaaadc-84c8-47e4-996b-6549adccff93",
+            "links": {
+                "self": {
+                    "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93?resourceVersion=id%3A2"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 2,
+                "drupal_internal__vid": 2,
+                "langcode": "en",
+                "revision_timestamp": "2020-07-07T19:11:11+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Palms",
+                "created": "2020-07-07T19:11:04+00:00",
+                "changed": "2020-07-07T19:11:11+00:00",
+                "promote": true,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "body": {
+                    "value": "<p>3535 Lebon Drive</p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>3535 Lebon Drive</p>",
+                    "summary": ""
+                }
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "112a4178-d925-4427-bb8e-e68247bac7be"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/node_type?resourceVersion=id%3A2"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/relationships/node_type?resourceVersion=id%3A2"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/revision_uid?resourceVersion=id%3A2"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/relationships/revision_uid?resourceVersion=id%3A2"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/uid?resourceVersion=id%3A2"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/f2aaaadc-84c8-47e4-996b-6549adccff93/relationships/uid?resourceVersion=id%3A2"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--destination",
+            "id": "7443a680-ef6d-4bff-b9e9-6e0f06626223",
+            "links": {
+                "self": {
+                    "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223?resourceVersion=id%3A3"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 3,
+                "drupal_internal__vid": 3,
+                "langcode": "en",
+                "revision_timestamp": "2020-07-07T19:11:46+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "UTC",
+                "created": "2020-07-07T19:11:19+00:00",
+                "changed": "2020-07-07T19:11:46+00:00",
+                "promote": true,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "body": {
+                    "value": "<p>4545 La Jolla Village Dr Suite e-25</p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>4545 La Jolla Village Dr Suite e-25</p>",
+                    "summary": ""
+                }
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "112a4178-d925-4427-bb8e-e68247bac7be"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/node_type?resourceVersion=id%3A3"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/relationships/node_type?resourceVersion=id%3A3"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/revision_uid?resourceVersion=id%3A3"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/relationships/revision_uid?resourceVersion=id%3A3"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "018134bb-c07c-453e-98d9-4a6311dec9cc"
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/uid?resourceVersion=id%3A3"
+                        },
+                        "self": {
+                            "href": "http://127.0.0.1:8888/jsonapi/node/destination/7443a680-ef6d-4bff-b9e9-6e0f06626223/relationships/uid?resourceVersion=id%3A3"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "links": {
+        "self": {
+            "href": "http://127.0.0.1:8888/jsonapi/node/destination"
+        }
+    }
+}
+```
+{% endcode %}
+
+**Title and body values are shipped under attributes key.**
+
+**More info on JSONAPI:** [**https://www.drupal.org/docs/8/modules/jsonapi**](https://www.drupal.org/docs/8/modules/jsonapi)\*\*\*\*
+
+## Step 2: Create React App <a id="3b62"></a>
+
+**轻车熟路**
+
+\*\*\*\*
 
