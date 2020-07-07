@@ -21,6 +21,7 @@
 
 * [Drupal 7 Module Development](projects/drupal-7.md)
 * [Drupal如何与React集成](projects/drupal-ru-he-yu-react-ji-cheng.md)
+* [创建一个解耦的Drupal 9&React应用](projects/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
 
 ## Algorithms
 
