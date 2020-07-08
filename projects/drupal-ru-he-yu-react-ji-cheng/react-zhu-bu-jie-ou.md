@@ -306,7 +306,9 @@ To start developing, run the `npm run start` command. A any changes will be auto
 
 ## Include the asset library on one or more pages
 
-You should now have an asset library named `react_example_theme/react_app`. The next steps are to attach the new asset library to one or more pages, and add a DOM element for your React application to bind to.
+You should now have an asset library named `react_example_theme/react_app`. **We did it in Step 4 previously.**
+
+The next steps are to attach the new asset library to one or more pages, and add a DOM element for your React application to bind to.
 
 In our example we'll [override](https://drupalize.me/tutorial/override-template-file) the _page.html.twig_ template to add a `<div>` into the sidebar. Our React application will render in the sidebar above any configured blocks.
 
@@ -392,7 +394,7 @@ class ReactExampleBlock extends BlockBase {
 * Creating Block plugins in [Implement a Plugin of Any Type](https://drupalize.me/tutorial/implement-plugin-any-type)
 * Attaching asset libraries to the page in [Attach a Library](https://drupalize.me/tutorial/attach-library)
 
-### And finally, confirm that it's working
+## And finally, confirm that it's working
 
 After making all the changes above you'll have created, or modified these files either directly or by running the build toolchain:
 
@@ -425,4 +427,8 @@ With the changes to our theme, or the addition of a new block, we should be able
 Edit your JavaScript file and refresh. If you are not seeing your changes, make sure your browser is not caching your JavaScript files and clear your Drupal cache. In Google Chrome, you can go to the Dev Tools: Network Tab &gt; Disable cache.
 
 ![Disable cache highlighted in Google Chrome](https://drupalize.me/sites/default/files/tutorials/01-02-01.png)
+
+#### Result
+
+![](../../.gitbook/assets/image%20%2828%29.png)
 
