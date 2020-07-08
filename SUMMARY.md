@@ -13,9 +13,10 @@
 * [Zero to One](readings/zero-to-one.md)
 * [Drupal 7 Module Development](readings/drupal-7-module-development.md)
 
-## News
+## Technology <a id="tech"></a>
 
-* [Technology](news/technology.md)
+* [News](tech/technology.md)
+* [Frontend](tech/frontend.md)
 
 ## Projects & Tutorials <a id="projects"></a>
 
