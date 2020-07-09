@@ -101,7 +101,7 @@ Note the use of [sparse fieldsets](https://drupalize.me/tutorial/jsonapi-sparse-
 
 This will result in a response that looks something like the following:
 
-```text
+```javascript
 {
   "jsonapi": { ... },
   "data": [
@@ -151,11 +151,11 @@ This will result in a response that looks something like the following:
 
 The content we're interested in is in the `data` key.
 
-#### Fetch when the `NodeListOnly` component mounts
+### Fetch when the `NodeListOnly` component mounts
 
 We can take the above code and add it to our `NodeListOnly` component so that when the component mounts \(the React term for "is added to the page"\) it'll start fetching data from Drupal.
 
-```text
+```jsx
 const NodeListOnly = () => {
   const [content, setContent] = useState(false);
 
@@ -190,7 +190,7 @@ This is all wrapped in a `useEffect()` with an empty array as the second argumen
 
 Let's modify the `return` value of `NodeListOnly` to iterate over the `content` state variable when it contains data to display, and use the `NoData` component if no data is found.
 
-```text
+```jsx
 return (
   <div>
     <h2>Site content</h2>
@@ -219,7 +219,7 @@ Example:
 
 Our `NodeItem` component gets used once for each node returned from JSON:API and the Drupal article node's content gets passed in as props. Let's render the article's title as a link to the article.
 
-```text
+```jsx
 const NodeItem = ({drupal_internal__nid, title}) => (
   <div>
     <a href={`/node/${drupal_internal__nid}`}>{title}</a>
@@ -243,7 +243,7 @@ Sometimes the API structure changes, or a field is missing or null. It helps to 
 
 Here is a sample validator function. You can add this anywhere in your _NodeListOnly.jsx_ file, and then add a conditional in the `fetch` logic to update the component's state if the data is valid. This simplified example verifies that `data.data` isn't empty. We recommend you check for the existence of specific values, like `title` or `body.summary`, and provide a default option or `null` value so that your component will not error out when trying to make use of data it expects to be present but is not.
 
-```text
+```jsx
 function isValidData(data) {
   if (data === null) {
     return false;
@@ -259,7 +259,7 @@ function isValidData(data) {
 
 Use this to validate the retrieved data by updating the `fetch` call in `NodeListOnly`:
 
-```text
+```jsx
 fetch(url, {headers})
   .then((response) => response.json())
   .then((data) => {
@@ -276,13 +276,13 @@ We can add some interactivity to our `NodeListOnly` component, and demonstrate t
 
 Add another state variable to `NodeListOnly`:
 
-```text
+```jsx
 const [filter, setFilter] = useState(null);
 ```
 
 Then update the return statement to the following:
 
-```text
+```jsx
 return (
   <div>
     <h2>Site content</h2>
@@ -327,7 +327,7 @@ The final result should look like this:
 
 Try this: create a new article node and leave it unpublished. Then refresh the page showing your `NodeListOnly` component from above. Is the unpublished article in the list or not? What if you log out and open the page again?
 
-Because all the JavaScript we've written here is embedded in the page that Drupal is serving, it -- most importantly, the `fetch()` calls in it -- uses the same session/cookies our browser uses for other interactions with this site. Calling `fetch()` sends along the browser's cookies with the request. Drupal uses this to authenticate your session, and the response from JSON:API will contain data that whatever user you're logged in as has access to.
+**Because all the JavaScript we've written here is embedded in the page that Drupal is serving, it -- most importantly, the `fetch()` calls in it -- uses the same session/cookies our browser uses for other interactions with this site.** Calling `fetch()` sends along the browser's cookies with the request. Drupal uses this to authenticate your session, and the response from JSON:API will contain data that whatever user you're logged in as has access to.
 
 This is important to keep in mind, because this behavior differs when we get into fully decoupled React applications later.  
 
