@@ -4,6 +4,8 @@ description: Use React to List Content from Drupal
 
 # 使用React罗列Drupal数据
 
+{% file src="../../.gitbook/assets/use-react-to-list-content-from-drupal-\_-drupalize.me.pdf" caption="8：使用React罗列Drupal数据" %}
+
 In order for our React code to list content from Drupal we'll need to enable the Drupal core JSON:API module, and then use `fetch()` in our React component to retrieve the desired data. This technique works for both React code embedded in a Drupal theme or module, and React code that is part of a fully decoupled application.
 
 ## Outline

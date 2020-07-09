@@ -27,6 +27,7 @@
   * [使用Webpack进行HMR](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-webpack-jin-hang-hmr.md)
   * [使用React下拉API数据](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-react-xia-la-api-shu-ju.md)
   * [使用React罗列Drupal数据](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-react-luo-lie-drupal-shu-ju.md)
+  * [使用React进行CRUD操作](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-react-jin-hang-crud-cao-zuo.md)
 * [创建一个解耦的Drupal 9&React应用](projects/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
 
 ## Algorithms
