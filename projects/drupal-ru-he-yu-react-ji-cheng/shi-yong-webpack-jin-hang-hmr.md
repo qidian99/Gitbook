@@ -6,6 +6,8 @@ description: Add Webpack Hot Module Replacement (HMR) to a Drupal Theme
 
 Hot Module Replacment \(HMR\) is a technique for using Webpack to update the code that your browser renders without requiring a page refresh. It's similar to [LiveReload](http://livereload.com/) with some additional features that make it better for working with React. With HMR configured it's possible to edit your JavaScript \(and CSS\) files in your IDE and have the browser update the page without requiring a refresh, allowing you to effectively see the results of your changes in near real time. If you're editing JavaScript or CSS it's amazing. And, it's one of the reasons people love the developer experience of working with React so much.
 
+{% file src="../../.gitbook/assets/add-webpack-hot-module-replacement-hmr-to-a-drupal-theme-\_-drupalize.me.pdf" caption="6：使用Webpack进行HMR" %}
+
 ## Outline
 
 * Walk through configuring Webpack hot module replacement for a Drupal theme

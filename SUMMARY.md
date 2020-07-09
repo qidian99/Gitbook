@@ -25,6 +25,7 @@
   * [React逐步解耦](projects/drupal-ru-he-yu-react-ji-cheng/react-zhu-bu-jie-ou.md)
   * [创建一个React组件](projects/drupal-ru-he-yu-react-ji-cheng/chuang-jian-yi-ge-react-zu-jian.md)
   * [使用Webpack进行HMR](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-webpack-jin-hang-hmr.md)
+  * [使用React下拉API数据](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-react-xia-la-api-shu-ju.md)
 * [创建一个解耦的Drupal 9&React应用](projects/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
 
 ## Algorithms

@@ -1,4 +1,10 @@
+---
+description: Connect React to a Drupal Theme or Module
+---
+
 # 创建一个React组件
+
+{% file src="../../.gitbook/assets/connect-react-to-a-drupal-theme-or-module-\_-drupalize.me.pdf" caption="5：创建React组件" %}
 
 ## Outline
 
