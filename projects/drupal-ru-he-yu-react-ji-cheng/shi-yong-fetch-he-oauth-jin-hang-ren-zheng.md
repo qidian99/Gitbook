@@ -10,7 +10,64 @@ To perform POST, PUT, and DELETE operations to Drupal's JSON:API via a decoupled
 
 To update our example application we need to first write some JavaScript code to manage the OAuth tokens. Then we'll update our existing React components to use that new code.
 
-In this tutorial we'll:
+**NOTE: To disable CSRF, follow this thread**
+
+{% embed url="https://www.drupal.org/project/drupal/issues/3055260" %}
+
+```text
+From 45af7dfc66b2e24f4c2c5e7e026ec973e03ee67d Mon Sep 17 00:00:00 2001
+From: TipiT <TipiT@1546808.no-reply.drupal.org>
+Date: Fri, 17 May 2019 12:18:09 +0200
+Subject: [PATCH] Check first if authentication method does not require CSRF
+ token.
+
+---
+ .../Drupal/Core/Access/CsrfRequestHeaderAccessCheck.php  | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+diff --git a/core/lib/Drupal/Core/Access/CsrfRequestHeaderAccessCheck.php b/core/lib/Drupal/Core/Access/CsrfRequestHeaderAccessCheck.php
+index c9266f5736..df9937688b 100644
+--- a/core/lib/Drupal/Core/Access/CsrfRequestHeaderAccessCheck.php
++++ b/core/lib/Drupal/Core/Access/CsrfRequestHeaderAccessCheck.php
+@@ -93,6 +93,14 @@ public function access(Request $request, AccountInterface $account) {
+     if (in_array($method, ['GET', 'HEAD', 'OPTIONS', 'TRACE'], TRUE)) {
+       return AccessResult::allowed();
+     }
++ 
++    // Check if authentication is done using Bearer token.
++    if ($account->isAuthenticated()) {
++      $auth_method = $request->headers->get('Authorization');
++      if ('Bearer ' == substr($auth_method, 0, 7))
++    // Let other access checkers decide if the request is legit.
++    return AccessResult::allowed()->setCacheMaxAge(0);
++    }
+
+     // This check only applies if
+     // 1. the user was successfully authenticated and
+@@ -111,7 +119,6 @@ public function access(Request $request, AccountInterface $account) {
+         return AccessResult::forbidden()->setReason('X-CSRF-Token request header is invalid')->setCacheMaxAge(0);
+       }
+     }
+-    // Let other access checkers decide if the request is legit.
+     return AccessResult::allowed()->setCacheMaxAge(0);
+   }
+
+-- 
+2.17.1
+
+```
+
+**How to apply patches:**
+
+{% embed url="https://www.drupal.org/patch/apply" %}
+
+Or in composer:
+
+{% embed url="https://groups.drupal.org/node/518975" %}
+
+
+
+## Outline
 
 * Write code to exchange a username and password for an OAuth access token using the password grant flow
 * Create a wrapper for the JavaScript `fetch()` that handles inserting the appropriate HTTP `Authorization` headers
@@ -18,28 +75,17 @@ In this tutorial we'll:
 
 By the end of this tutorial you'll be able to use OAuth access tokens to make authenticated requests in a React application using `fetch`.
 
-### Goal
-
-Modify our `NodeReadWrite` application's code to get and use an OAuth access token.
-
-### Prerequisites
-
-* `NodeReadWrite` code from previous tutorials in this series
-* [Simple OAuth installed](https://drupalize.me/tutorial/install-and-configure-simple-oauth)
-* [Make API requests with OAuth](https://drupalize.me/tutorial/make-api-requests-oauth)
-* [Access an API from the Browser with Cross-Origin Resource Sharing](https://drupalize.me/tutorial/access-api-browser-cross-origin-resource-sharing)
-
-### What we're building
+## What we're building
 
 Here's an example of what your application should look like after completing this tutorial:
 
 ![Screenshot of application shows login form at top of page, followed by a list of 10 Drupal article nodes with an edit button for each, followed by a button to add a new node.](https://drupalize.me/sites/default/files/tutorials/decoupled-front-page.png)
 
-### A note about CSRF tokens
+## A note about CSRF tokens
 
 If you've been following along with this series, you'll recall in the [Build an Interface to Edit Nodes with React](https://drupalize.me/tutorial/build-interface-edit-nodes-react) tutorial we added a `fetchWithCSRFToken()` helper function. It's used to retrieve a CSRF token from Drupal and include that in POST/PATCH/DELETE requests. Because we're switching to OAuth for user authentication and no longer riding on the browser's active session, we don't need to add an `X-CSRF-Token` to our HTTP request's headers. This code can be removed.
 
-### Write the code to make authenticated requests
+## Write the code to make authenticated requests
 
 This assumes you've already started writing an application following the steps in [Use create-react-app to Start a Decoupled React Application](https://drupalize.me/tutorial/use-create-react-app-start-decoupled-react-application). Though, the code examples should be helpful for any JavaScript application integrating with Drupal's OAuth features.
 
@@ -53,7 +99,7 @@ Start by creating a set of helper functions that we can re-use throughout our ap
 
 Add the file _src/utils/auth.js_ with the following content. We'll explain it in detail below:
 
-```text
+```javascript
 /**
  * @file
  *
@@ -278,7 +324,9 @@ export function getAuthClient(config = {}) {
 
 The above code is a lightweight library for managing OAuth tokens. You could also use an existing library; many HTTP request libraries like Axios or request have middleware to assist with OAuth requests already. We wanted to create our own to help better explain how this all works.
 
-The module exports a `getAuthClient()` function, which returns an object populated with the libraries functions, `return {debug, login, logout, isLoggedIn, fetchWithAuthentication, token, refreshToken};`. This is a technique called currying, which allows us to have a set of functions that all share the same configuration, without having to pass that configuration to each function individually. It's somewhat akin to dependency injection.
+The module exports a `getAuthClient()` function, which returns an object populated with the libraries functions, `return {debug, login, logout, isLoggedIn, fetchWithAuthentication, token, refreshToken};`
+
+This is a technique called **currying**, which allows us to have a set of functions that all share the same configuration, without having to pass that configuration to each function individually. It's somewhat akin to dependency injection.
 
 The functions it returns include:
 
@@ -293,13 +341,13 @@ The functions it returns include:
 
 Note the `defaultConfig` variable. **This needs to be updated to contain relevant values for your application.** Or, you can pass in the necessary config for your environment when you call `getAuthClient()` and it will merge with the defaults.
 
-### Add a UI so users can login and logout
+## Add a UI so users can login and logout
 
 Let's create a new `LoginForm` component that displays a form that users can fill out with a username and password to login. If the current user is already logged in, display a button that allows them to logout.
 
 Add a new file, _src/components/LoginForm.jsx_ with the following content:
 
-```text
+```jsx
 import React, { useState, useEffect } from 'react';
 import { getAuthClient } from '../utils/auth';
 
@@ -416,7 +464,7 @@ Make the `LoginForm` component active by importing it into _src/App.js_ and outp
 
 Example:
 
-```text
+```jsx
 function App() {
   return (
     <>
@@ -427,7 +475,7 @@ function App() {
 }
 ```
 
-### Update existing components to use new OAuth library
+## Update existing components to use new OAuth library
 
 Next, update any existing components and replace calls to either `fetch()` or `fetchWithCsrfToken()` to use the new `fetchWithAuthentication()` function from above.
 
@@ -435,7 +483,7 @@ Next, update any existing components and replace calls to either `fetch()` or `f
 
 Edit the file _src/components/NodeReadWrite.jsx_, and at the top import and intialize the OAuth client:
 
-```text
+```javascript
 import { getAuthClient } from "../utils/auth";
 const auth = getAuthClient();
 ```
@@ -446,7 +494,7 @@ The `fetchWithAuthentication` function can is a drop in replacement for `fetch()
 
 Example:
 
-```text
+```jsx
 const url = `/jsonapi/node/article?fields[node--article]=id,drupal_internal__nid,title,body&sort=-created&page[limit]=10`;
 ```
 
@@ -460,7 +508,7 @@ Let's add a bit of CSS to make our app easier to use. Since we started with `cre
 
 This works because the _src/App.js_ file contains an import like this:
 
-```text
+```jsx
 import './App.css';
 ```
 
@@ -468,7 +516,7 @@ Webpack will recognize that the import is actually for a .css file, and take app
 
 Edit _src/App.css_ and add the following, along with any styling you want to apply:
 
-```text
+```css
 #root {
   border: 1px solid #000;
   margin: 1em auto;
@@ -501,7 +549,50 @@ Read more about the various ways you can [add CSS styles to a create-react-app p
 
 With this code in place, if someone visits the page and there is no token in the localStorage, then they will see a login form. When they login, an OAuth token that contains both an access token and a refresh token gets retrieved from Drupal. The login form's state gets updated and changes to display a logout button. All future requests to Drupal, assuming they're made via the `auth.fetchWithAuthentication()` function, will include the access token in the HTTP `Authorization` header if it's present. Drupal will treat those as authenticated requests, and allow operations like `POST`, and `DELETE` if the user represented by the access token is authorized to do those things.
 
-### Additional code required
+## CSRF
+
+![](../../.gitbook/assets/image%20%2816%29.png)
+
+Change the `fetchWithAuthentication`
+
+```jsx
+  import { fetchWithCSRFToken } from './fetch';
+
+...
+  
+  /**
+   * Wrapper for fetch() that will attempt to add a Bearer token if present.
+   *
+   * If there's a valid token, or one can be obtained via a refresh token, then
+   * add it to the request headers. If not, issue the request without adding an
+   * Authorization header.
+   *
+   * @param {string} url URL to fetch.
+   * @param {object} options Options for fetch().
+   */
+  async function fetchWithAuthentication(url, options) {
+    if (!options.headers.get('Authorization')) {
+      const oauth_token = await token();
+      if (oauth_token) {
+        console.log('using token', oauth_token);
+        options.headers.append('Authorization', `Bearer ${oauth_token.access_token}`);
+      }
+      // return fetch(`${config.base}${url}`, options);
+      return fetchWithCSRFToken(`${config.base}/session/token?_format=json`, `${config.base}${url}`, options);
+    }
+  }
+
+```
+
+Follow the `service.yml` section in the tutorial below to config CORS in Drupal 8
+
+{% page-ref page="../chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md" %}
+
+## Done!
+
+![](../../.gitbook/assets/image%20%287%29.png)
+
+## Additional code required
 
 At this point our application is a fully decoupled version of the same application we built inside the Drupal theme earlier. If you start to play around you'll notice some things that don't work. For example, you can't navigate to an article by pressing the link.
 

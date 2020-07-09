@@ -19,7 +19,7 @@ Use the following steps to configure Simple OAuth to allow our React application
 
 ### NOTE: Don't install via tar.gz or link, use COMPOSER
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 To follow along with building this app you'll need this configuration at a minimum:
 
@@ -120,7 +120,7 @@ You should get a response that looks like:
 }
 ```
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 #### Change permission of the public key.
 
@@ -144,11 +144,11 @@ Run `drush entup` for Drupal &lt; 8.7 \(since it ships with Drupal Core\).
 
 For later Drupal versions, install the module `Devel Entity Updates`and run the same command
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png)
 
 ### And Finally
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 ### Use POST to create a new node
 
@@ -229,7 +229,7 @@ Right not for a quick fix: **do a GET from the tool you are using**
 
 Copy the token to the request header as follows:
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2820%29.png)
 
 ### Use PATCH to edit a new node
 
@@ -273,7 +273,7 @@ If this is successful, you should get a `200 OK` response.
 
 ### Note: make sure to follow the REST-ful API guideline in the URL
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 ### Use DELETE to delete a node
 
