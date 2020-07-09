@@ -22,6 +22,7 @@
 
 * [Git命令](projects/git-ming-ling.md)
 * [Drupal 7 Module Development](projects/drupal-7.md)
+* [Drupal 7中的实体类别](projects/drupal-7-zhong-de-shi-ti-lei-bie.md)
 * [Drupal 8 如何与React集成](projects/drupal-ru-he-yu-react-ji-cheng/README.md)
   * [React逐步解耦](projects/drupal-ru-he-yu-react-ji-cheng/react-zhu-bu-jie-ou.md)
   * [创建一个React组件](projects/drupal-ru-he-yu-react-ji-cheng/chuang-jian-yi-ge-react-zu-jian.md)
