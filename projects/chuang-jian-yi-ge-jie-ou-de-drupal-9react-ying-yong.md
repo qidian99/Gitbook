@@ -8,7 +8,7 @@ description: 中文莫名乱码，所以笔记全英文
 
 {% embed url="https://medium.com/@purushotamrai/getting-started-with-reactjs-drupal-fully-decoupled-feae28a41a5d" %}
 
-![Coupled vs. Decoupled](../.gitbook/assets/image%20%287%29.png)
+![Coupled vs. Decoupled](../.gitbook/assets/image%20%288%29.png)
 
 We can see that in the decoupled way Drupal is exposing internal resources through its web services API. It makes me question:
 
@@ -103,13 +103,13 @@ Note that the drush is installed in the local directory. If want a global drush 
 
 The configuration of database when we call `./vendor/bin/drush si`
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 Add the export in `~/.bash_profile` and restart bash \(note: NOT .bashrc\):
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 I set the username and password in the file ~/.mysql.config and add the alias in .bash\_profile
 
@@ -119,7 +119,7 @@ alias mysql="/usr/local/mysql/bin/mysql --defaults-extra-file=~/.mysql.config"
 
 Test MySQL connection:
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 **Proceed with `drush si`**
 
@@ -206,7 +206,7 @@ vendor/bin/drush en -y admin_toolbar admin_toolbar_tools jsonapi
 drush runserver
 ```
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 Error is thrown
 
@@ -218,13 +218,13 @@ Parse error: syntax error, unexpected '?', expecting variable (T_VARIABLE) in /U
 
 {% embed url="https://stackoverflow.com/questions/56510272/how-to-fix-php-parse-error-syntax-error-unexpected-on-laravel-5-8" %}
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 Need to update the PHP. I install the new version in Homebrew via`brew install php@7.4`
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
 Location: `/usr/local/opt/php@7.4/bin/php`
 
@@ -232,13 +232,13 @@ Location: `/usr/local/opt/php@7.4/bin/php`
 
 `/usr/local/opt/php@7.4/bin/php ./vendor/bin/drush serve`
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 I also created a file `drupal_start.sh` and copied the above script.
 
 啦啦啦
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 Initial tables
 
@@ -261,7 +261,7 @@ Initial tables
 
 **Add new content type and give the name as ‘Destination’.** Then add some sample destinations: 
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
 ### **5. Review JSON web service API**
 
@@ -272,7 +272,7 @@ But it's better to visit the URL in Postman
 
 {% embed url="http://127.0.0.1:8888/jsonapi" %}
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 destination contents are available as JSON data on 
 
@@ -640,7 +640,7 @@ export default App;
 ```
 {% endcode %}
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 ## Step 4: Fetch Data & Display <a id="6526"></a>
 
@@ -705,7 +705,7 @@ export default App;
 
 **Problem**: CORS
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 **Solution**: have CORS configured on /admin/config/services/cors \(deprecated, see below\)
 
@@ -713,7 +713,7 @@ export default App;
 
 So we change `web/sites/default/default.services.yml` to be
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 > Find: .../sites/default/default.services.yml
 >
@@ -731,7 +731,7 @@ WORKED!
 
 **NOTE: Default is only for restoring default settings!**
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 ### **2. Display Data**
 
@@ -786,7 +786,7 @@ export default class DestinationItem extends React.Component {
 ```
 {% endcode %}
 
-![Done!](../.gitbook/assets/image%20%289%29.png)
+![Done!](../.gitbook/assets/image%20%2811%29.png)
 
 ## Conclusion
 
