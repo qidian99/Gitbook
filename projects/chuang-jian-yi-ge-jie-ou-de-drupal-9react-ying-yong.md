@@ -729,7 +729,8 @@ So we change `web/sites/default/default.services.yml` to be
 
 WORKED! 
 
-```text
+{% code title="sites/default/services.yml" %}
+```yaml
   cors.config:
     enabled: true
       # Specify allowed headers, like 'x-allowed-header'.
@@ -745,6 +746,7 @@ WORKED!
       # Sets the Access-Control-Allow-Credentials header.
     supportsCredentials: true
 ```
+{% endcode %}
 
 **NOTE: Default is only for restoring default settings!**
 

@@ -588,7 +588,26 @@ Follow the `service.yml` section in the tutorial below to config CORS in Drupal 
 
 {% page-ref page="../chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md" %}
 
-## Done!
+{% code title="sites/default/services.yml" %}
+```yaml
+  cors.config:
+    enabled: true
+      # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: ['x-csrf-token','authorization','content-type','accept','origin','x-requested-with', 'access-control-allow-origin','x-allowed-header','*']
+      # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ['*']
+      # Configure requests allowed from specific origins.
+    allowedOrigins: ['http://localhost/','http://localhost:3000','http://localhost:3001','http://localhost:3002','*']
+      # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: false
+      # Sets the Access-Control-Max-Age header.
+    maxAge: false
+      # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: true
+```
+{% endcode %}
+
+**Done!**
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
