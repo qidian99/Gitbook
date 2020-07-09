@@ -18,8 +18,6 @@ A few things you'll need to understand. First, how to format the `POST`, `PATCH`
 
 The goal is to build a React application that will allow a user to edit Drupal node content from within a user interface provided by React. This exercise demonstrates the fundamental concepts you'll need to understand. Our example takes shortcuts with regards to error handling and UI niceties, but we'll try and call those out when they happen.
 
-Here's an example of what we're building:
-
 Initially we'll build this application embedded inside a Drupal theme to show how progressively decoupled applications might work. Then, we'll refactor our code to a fully decoupled application that works by accessing Drupal via the backend API.
 
 The methods we use in this tutorial apply to any content entity in Drupal and are intended to familiarize you with how to perform CRUD operations with React. In addition to editing node content, you can modify user data, taxonomy terms, and other content entities in Drupal using methods like those presented here.
@@ -30,7 +28,7 @@ Note: If you're using the Drupal core REST module instead of JSON:API you can al
 
 Doing things like creating and deleting content in Drupal requires that you're signed in as a user with permission to perform those operations. This is also true when using JSON:API to perform these tasks.
 
-It's worth mentioning that initially, you will _not_ need to set up OAuth, CORS or Http Basic Authentication. This is because our React code gets embedded on a Drupal page, and inherits the permissions of the user viewing that page.
+It's worth mentioning that initially, you **will** _**not**_ **need to set up OAuth, CORS or Http Basic Authentication.** This is because our React code _gets embedded on a Drupal page, and inherits the permissions of the user viewing that page._
 
 This works because using the JavaScript `fetch` function, and its `same-origin` setting, while logged in to Drupal, lets us use our current session to make authenticated requests to Drupal. Whenever a `fetch` request gets issued to the same domain that the JavaScript code is served from, the browser will send your Cookies along with the request. In the background, Drupal will use the content of those Cookies to validate your session. If you are logged in as a user with permissions to add, edit or delete node content, the `fetch` request will succeed, and update the data.
 
@@ -69,7 +67,7 @@ The data we pass to the API endpoint should match the structure returned from a 
 
 Example:
 
-```text
+```javascript
 {
   "data": {
     "type": "node--article",
@@ -86,7 +84,7 @@ Example:
 
 Example using `fetch`:
 
-```text
+```jsx
 const headers = new Headers({
   'Accept': 'application/vnd.api+json',
   'Content-Type': 'application/vnd.api+json',
@@ -130,11 +128,11 @@ Cache: no-cache
 
 Note the UUID included in the path.
 
-Make sure you include the `id` of the resource to update in the request body. Note that when making PATCH requests you need to include only the fields that you want to change.
+Make sure you include the `id` of the resource to update in the request body. Note that when making PATCH requests you need to include **only the fields that you want to change**.
 
 Example:
 
-```text
+```javascript
 {
   "data": {
     "type": "node--article",
@@ -148,7 +146,7 @@ Example:
 
 Example using `fetch`:
 
-```text
+```jsx
 const uuid = 'ID-OF-RESOURCE-TO-UPDATE';
 
 const headers = new Headers({
@@ -191,7 +189,7 @@ Set the method to `DELETE`. You do not need to include anything in the body of t
 
 Example using `fetch`:
 
-```text
+```jsx
 const uuid = 'ID-OF-RESOURCE-TO-UPDATE';
 
 const headers = new Headers({
