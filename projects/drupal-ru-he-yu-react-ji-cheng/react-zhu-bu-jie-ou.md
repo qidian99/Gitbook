@@ -430,5 +430,5 @@ Edit your JavaScript file and refresh. If you are not seeing your changes, make 
 
 #### Result
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2836%29.png)
 

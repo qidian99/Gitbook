@@ -20,11 +20,11 @@ React is a JS library while Drupal is a CMS.
 
 Top-down designs provided by page and screen. We then took those designs and broke them down into their containers, grid systems, and elements to write our markup. This is how Drupal core and most web development works.
 
-![Drupal uses Top-Down design](../../.gitbook/assets/image%20%2835%29.png)
+![Drupal uses Top-Down design](../../.gitbook/assets/image%20%2838%29.png)
 
 Atomic Design, a design-systems methodology outlined by Brad Frost, states that we should start with the basic building blocks, or atoms, of a page and work our way up to create designs:
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 ### Components
 
@@ -32,7 +32,7 @@ Component-based, starting from reusable UIs and build up the larger component.
 
 > Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 > Components and their behaviors are intimately dependant and should be encapsulated like so. -- James Long on Removing User Interface Complexity or Why React is Awesome
 
@@ -157,7 +157,7 @@ The terms _decoupled_, _headless_, and _stand-alone_ all refer to a scenario in 
 Think of this as two independent applications -- one React, one Drupal -- that communicate with one another via an API.  
 
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2822%29.png)
 
 _Bringing data from Drupal into React requires setting up an API that exposes Drupal content at API endpoints, and then telling React to grab that data from the endpoint and parse that data as JSON._
 

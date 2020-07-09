@@ -32,6 +32,7 @@
   * [使用React创建更新UI界面](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-react-chuang-jian-geng-xin-ui-jie-mian.md)
   * [创建一个完全解耦的React应用](projects/drupal-ru-he-yu-react-ji-cheng/chuang-jian-yi-ge-wan-quan-jie-ou-de-react-ying-yong.md)
   * [用OAuth来进行API请求](projects/drupal-ru-he-yu-react-ji-cheng/yong-oauth-lai-jin-hang-api-qing-qiu.md)
+  * [使用Fetch和OAuth进行认证](projects/drupal-ru-he-yu-react-ji-cheng/shi-yong-fetch-he-oauth-jin-hang-ren-zheng.md)
 * [创建一个解耦的Drupal 9&React应用](projects/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
 
 ## Algorithms

@@ -255,7 +255,7 @@ In which you can see that the development server is now accessible at `https://l
 
 If you make changes to any of the React code in your theme those changes should update on the site in near real time.
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 **NOTE:**
 

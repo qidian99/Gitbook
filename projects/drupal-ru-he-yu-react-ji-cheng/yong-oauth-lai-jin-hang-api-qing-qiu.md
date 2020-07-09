@@ -19,7 +19,7 @@ Use the following steps to configure Simple OAuth to allow our React application
 
 ### NOTE: Don't install via tar.gz or link, use COMPOSER
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 To follow along with building this app you'll need this configuration at a minimum:
 
@@ -120,7 +120,7 @@ You should get a response that looks like:
 }
 ```
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 #### Change permission of the public key.
 
@@ -144,11 +144,11 @@ Run `drush entup` for Drupal &lt; 8.7 \(since it ships with Drupal Core\).
 
 For later Drupal versions, install the module `Devel Entity Updates`and run the same command
 
-![](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 ### And Finally
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png)
 
 ### Use POST to create a new node
 
@@ -224,7 +224,12 @@ If this is successful, you should get a `201 Created` response.
 
 {% embed url="https://www.drupal.org/project/drupal/issues/3055260" %}
 
+Right not for a quick fix: **do a GET from the tool you are using**  
+`http://{DRUPAL_URL}/rest/session/token`
 
+Copy the token to the request header as follows:
+
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 ### Use PATCH to edit a new node
 
@@ -242,7 +247,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGci...
 
 **Body:**
 
-```text
+```javascript
 {
   "data": {
     "type": "node--article",
@@ -264,11 +269,17 @@ If this is successful, you should get a `200 OK` response.
 
 ![Postman application showing response for successful PATCH request.](https://drupalize.me/sites/default/files/tutorials/postman-patch-response.png)
 
-#### Use DELETE to delete a node
+![](../../.gitbook/assets/image%20%282%29.png)
+
+### Note: make sure to follow the REST-ful API guideline in the URL
+
+![](../../.gitbook/assets/image%20%287%29.png)
+
+### Use DELETE to delete a node
 
 Make a DELETE request to `http://localhost:8888/jsonapi/node/article/{NODE UUID}`
 
-**Headers:**
+#### **Headers:**
 
 ```text
 Accept: application/vnd.api+json
@@ -278,7 +289,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1Qi...
 
 ![Postman application with DELETE request headers filled out.](https://drupalize.me/sites/default/files/tutorials/postman-delete-headers.png)
 
-**No Body.**
+#### **No Body.**
 
 ![Postman application with DELETE request body filled out.](https://drupalize.me/sites/default/files/tutorials/postman-delete-body.png)
 
@@ -286,7 +297,7 @@ If this is successful, you should get a `204 No Content` response with an empty 
 
 ![Postman application showing response for successful DELETE request.](https://drupalize.me/sites/default/files/tutorials/postman-delete-response.png)
 
-### Troubleshooting
+## Troubleshooting
 
 * Use double-quotes in your JSON, not single quotes, to avoid issues with special characters
 * Make sure there are no trailing commas in your JSON objects
