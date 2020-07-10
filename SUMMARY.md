@@ -20,7 +20,6 @@
 
 ## Projects & Tutorials <a id="projects"></a>
 
-* [Git命令](projects/git-ming-ling.md)
 * [Drupal](projects/drupal/README.md)
   * [Drupal 7 Module Development](projects/drupal/drupal-7.md)
   * [Drupal 7中的实体类型](projects/drupal/drupal-7-zhong-de-shi-ti-lei-bie.md)
@@ -37,6 +36,7 @@
     * [用OAuth来进行API请求](projects/drupal/drupal-ru-he-yu-react-ji-cheng/yong-oauth-lai-jin-hang-api-qing-qiu.md)
     * [使用Fetch和OAuth进行认证](projects/drupal/drupal-ru-he-yu-react-ji-cheng/shi-yong-fetch-he-oauth-jin-hang-ren-zheng.md)
   * [创建一个解耦的Drupal 9&React应用](projects/drupal/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
+* [Git命令](projects/git-ming-ling.md)
 
 ## Algorithms
 
