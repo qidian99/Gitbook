@@ -34,3 +34,9 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 {% file src="../.gitbook/assets/zero-to-one\_chapter6.pdf" caption="思维导图" %}
 
+### Chapter 07: Follow the Money
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter7.pdf" caption="思维导图" %}
+
+
+
