@@ -12,3 +12,12 @@
 
 
 
+1. Compiler
+   * h1 h2 h3 all blue is compiled together in Sass but separate in LESS
+2. Conditionals
+   1. Sass has if/then/else
+   2. LESS uses "guarded mixins"
+3. Additional Tools
+   1. Sass: Compass
+   2. LESS Elements
+
