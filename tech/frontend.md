@@ -21,3 +21,108 @@
    1. Sass: Compass
    2. LESS Elements
 
+{% embed url="http://compass-style.org/install/" %}
+
+```text
+directory testcss/ 
+directory testcss/sass/ 
+directory testcss/stylesheets/ 
+   create testcss/config.rb 
+   create testcss/sass/screen.scss 
+   create testcss/sass/print.scss 
+   create testcss/sass/ie.scss 
+    write testcss/stylesheets/ie.css
+    write testcss/stylesheets/print.css
+    write testcss/stylesheets/screen.css
+
+*********************************************************************
+Congratulations! Your compass project has been created.
+
+You may now add and edit sass stylesheets in the sass subdirectory of your project.
+
+Sass files beginning with an underscore are called partials and won't be
+compiled to CSS, but they can be imported into other sass stylesheets.
+
+You can configure your project by editing the config.rb configuration file.
+
+You must compile your sass stylesheets into CSS when they change.
+This can be done in one of the following ways:
+  1. To compile on demand:
+     compass compile [path/to/project]
+  2. To monitor your project for changes and automatically recompile:
+     compass watch [path/to/project]
+
+More Resources:
+  * Website: http://compass-style.org/
+  * Sass: http://sass-lang.com
+  * Community: http://groups.google.com/group/compass-users/
+
+
+To import your new stylesheets add the following lines of HTML (or equivalent) to your webpage:
+<head>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+</head>
+```
+
+![Custom Compass Configuration](../.gitbook/assets/image%20%2843%29.png)
+
+```bash
+$ gem install compass
+$ cd <myproject>
+$ compass install compass --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images-dir "images"
+```
+
+### Sass
+
+#### Interpolation 
+
+* `#{$VAR_NAME}`
+
+![](../.gitbook/assets/image%20%2846%29.png)
+
+#### mixins
+
+![Definition of a mixin](../.gitbook/assets/image%20%2849%29.png)
+
+![Include the mixin](../.gitbook/assets/image%20%2845%29.png)
+
+#### extend
+
+![](../.gitbook/assets/image%20%2847%29.png)
+
+#### partials and imports
+
+1. Create the \_base.scss file
+
+![](../.gitbook/assets/image%20%2848%29.png)
+
+2. Copy the previous scss in master file into the base file, and import the base file in master file
+
+Remember to first import the base file and then other files in the master file
+
+![You can use the variables declared in the base file](../.gitbook/assets/image%20%2842%29.png)
+
+3. In this way we can separate regions \(e.g., typology vs content\)
+
+### Compass
+
+#### Commands
+
+1. Sass: `sass watch test.scss:test.css`
+2. `compass watch [path/to/project]`
+
+#### Config.rb
+
+![](../.gitbook/assets/image%20%2844%29.png)
+
+### Other tools to use with Sass
+
+* Blueprint
+* SUSY
+* Zen \(Written by Drupal Core contributor\)
+* Bourbon
+
