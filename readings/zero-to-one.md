@@ -22,3 +22,15 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 {% file src="../.gitbook/assets/zero-to-one\_chapter-3.pdf" caption="思维导图" %}
 
+### Chapter 04: The Ideology of Competition
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter4.pdf" caption="思维导图" %}
+
+### Chapter 05: Last Mover Advantage
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter5.pdf" caption="思维导图" %}
+
+### Chapter 06: You are not a Lottery Ticket
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter6.pdf" caption="思维导图" %}
+
