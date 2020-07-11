@@ -52,5 +52,19 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 ### Chapter 11: If You Build It, Will They Come
 
-{% file src="../.gitbook/assets/zero-to-one\_chapter11.pdf" %}
+{% file src="../.gitbook/assets/zero-to-one\_chapter11.pdf" caption="思维导图" %}
+
+### Chapter 12: Man and Machine
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter12.pdf" caption="思维导图" %}
+
+### Chapter 13: Seeing Green
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter13.pdf" caption="思维导图" %}
+
+### Chapter 14: The Founder's Paradox
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter14.pdf" %}
+
+
 
