@@ -4,7 +4,7 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 # Zero to One
 
-### 
+不要想着突飞猛进的改变，那是他们成功以后的谈资。好的想法完全可以是incremental in nature的，切入点格局放小，看准核心用户。
 
 ### Preface
 
@@ -37,6 +37,14 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 ### Chapter 07: Follow the Money
 
 {% file src="../.gitbook/assets/zero-to-one\_chapter7.pdf" caption="思维导图" %}
+
+### Chapter 08: Secrets
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter8.pdf" caption="思维导图" %}
+
+### Chapter 09: Foundations
+
+{% file src="../.gitbook/assets/zero-to-one\_chapter9.pdf" caption="思维导图" %}
 
 
 
