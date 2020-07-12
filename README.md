@@ -97,7 +97,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 
 
-## 设计&阅读
+## 阅读
 
 ### Summer 2020
 
@@ -113,12 +113,17 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 {% embed url="https://diqi.gitbook.io/drupal/book/drupal-7-module-development" %}
 
-* Unix编程艺术，Recommended by 分布式实验室公众号 \(Not started\)
+* Unix编程艺术，Recommended by 分布式实验室公众号 \(2020/07/11 - Present\)
+
+{% page-ref page="readings/the-art-of-unix-programming.md" %}
 
 ### 课程书
 
 * [An Introduction to Stochastic Modeling](https://roger.ucsd.edu/search~S9?/aPinsky%2C+Mark+A.%2C+1940-+author/apinsky+mark+a+1940+author/-3%2C-1%2C0%2CE/frameset&FF=apinsky+mark+a+1940+author&1%2C1%2C), by Mark A. Pinsky and Samuel Karlin; 4th edition
 * Database Management Systems \(3rd edition\), by Raghu Ramakrishnan and Johannes Gehrke \(aka the "cow book"\) \(2020/07/11 - Present\)
+
+{% page-ref page="readings/database-management-systems.md" %}
+
 * Database Systems: The Complete Book \(2nd edition\), by Hector Garcia-Molina, Jennifer Widom, and Jeffrey Ullman.
 * [Computer Networks: A Systems Approach \(5th edition\) by Peterson and Davie](http://www.sciencedirect.com/science/book/9780123850591)
 
