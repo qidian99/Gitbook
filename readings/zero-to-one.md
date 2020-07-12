@@ -2,7 +2,7 @@
 description: 'Peter Thiel, Starting from 2020/06/25'
 ---
 
-# Zero to One
+# Zero to One \(Done\)
 
 不要想着突飞猛进的改变，那是他们成功以后的谈资。好的想法完全可以是incremental in nature的，切入点格局放小，看准核心用户。
 
@@ -64,7 +64,9 @@ description: 'Peter Thiel, Starting from 2020/06/25'
 
 ### Chapter 14: The Founder's Paradox
 
-{% file src="../.gitbook/assets/zero-to-one\_chapter14.pdf" %}
+{% file src="../.gitbook/assets/zero-to-one\_chapter14.pdf" caption="思维导图" %}
 
+### Conclusion
 
+{% file src="../.gitbook/assets/zero-to-one\_conclusion.pdf" caption="思维导图" %}
 

@@ -79,6 +79,8 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 受到[leetcode.wang](https://leetcode.wang/)的启发，工作日每天10道Leetcode算法题。计划和该网站一样发布些新奇的解法
 
+然而精力有限，这个目标达不到了。
+
 ## 研发课程
 
 ### 数据库
@@ -103,7 +105,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
   {% page-ref page="readings/the-design-of-everyday-things.md" %}
 
-* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(2020/06/25 - Present）
+* Peter Thiel的[Zero to One](https://en.wikipedia.org/wiki/Zero_to_One) \(2020/06/25 - 2020/07/11）
 
   {% page-ref page="readings/zero-to-one.md" %}
 
@@ -116,7 +118,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 ### 课程书
 
 * [An Introduction to Stochastic Modeling](https://roger.ucsd.edu/search~S9?/aPinsky%2C+Mark+A.%2C+1940-+author/apinsky+mark+a+1940+author/-3%2C-1%2C0%2CE/frameset&FF=apinsky+mark+a+1940+author&1%2C1%2C), by Mark A. Pinsky and Samuel Karlin; 4th edition
-* Database Management Systems \(3rd edition\), by Raghu Ramakrishnan and Johannes Gehrke \(aka the "cow book"\).
+* Database Management Systems \(3rd edition\), by Raghu Ramakrishnan and Johannes Gehrke \(aka the "cow book"\) \(2020/07/11 - Present\)
 * Database Systems: The Complete Book \(2nd edition\), by Hector Garcia-Molina, Jennifer Widom, and Jeffrey Ullman.
 * [Computer Networks: A Systems Approach \(5th edition\) by Peterson and Davie](http://www.sciencedirect.com/science/book/9780123850591)
 

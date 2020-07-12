@@ -2,7 +2,7 @@
 description: 2020/06/16 to 2020/06/24
 ---
 
-# The Design of Everyday Things
+# The Design of Everyday Things \(Done\)
 
 非常有意思的一本设计书，讲了Affordance，Signifier，Mapping，Constraint等概念，以及人的思维、行为模式
 
