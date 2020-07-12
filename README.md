@@ -77,11 +77,9 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ## 算法
 
-受到[leetcode.wang](https://leetcode.wang/)的启发，工作日每天10道Leetcode算法题。计划和该网站一样发布些新奇的解法
+受到[leetcode.wang](https://leetcode.wang/)的启发，会总结下Leetcode算法题。计划和该网站一样发布些新奇的解法。
 
-然而精力有限，这个目标达不到了。
-
-## 研发课程
+## 课程
 
 ### 数据库
 
@@ -95,7 +93,9 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
   {% page-ref page="courses/cmu-15-721.md" %}
 
+### 图形
 
+* 计划旁听UCSD CSE167 CSE168系列
 
 ## 阅读
 
