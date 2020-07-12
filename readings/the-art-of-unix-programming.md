@@ -1,5 +1,5 @@
 ---
-description: 人都是这样，受益最多的往往是自己最不擅长的知识 -- 对本科OS课程留有遗憾
+description: 人都是这样，受益最多的往往是自己最不擅长的知识 -- 对本科OS课程有感而发
 ---
 
 # The Art of Unix Programming
