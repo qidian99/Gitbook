@@ -9,3 +9,5 @@
 * When the last commit **is** the initial commit
   * Execute `git update-ref -d HEAD` followed by ~~`git rm -fr .`~~ `git rm --cached -r .` cf. [How to revert initial git commit?](https://stackoverflow.com/questions/6632191/how-to-revert-initial-git-commit)
 
+
+

@@ -83,11 +83,15 @@ Solution: increase PHP mem size:
 
 1. sudo cp /etc/php.ini.default /etc/php.ini
 2. sudo su
-3. vi /etc/php.ini and change memory to -1 \(unlimited\)
-4. apachectl restart
-5. `php -r "echo ini_get('memory_limit').PHP_EOL;` should give you -1
+3. `vim /etc/php.ini` and change `memory_limit` to -1 \(unlimited\)
+4. `apachectl restart`
+5. `php -r "echo ini_get('memory_limit').PHP_EOL;"` should give you -1
 
-Then we can finally run
+**Note**: if you find that copy the `php.ini` file does not change the output in step 5, use `which php` to locate the `php` and copy the `php.ini` to the corresponding location. E.g.,
+
+![copy the file into correct PHP location](../../.gitbook/assets/image%20%2850%29.png)
+
+#### Then we can finally run
 
 ```text
 composer require --dev drush/drush
@@ -162,6 +166,17 @@ Unset the password \(default one in unknown\)
 
 ```text
 sudo $(brew --prefix mysql)/bin/mysqladmin -u root password root
+```
+
+Create database
+
+```text
+mysql -u root -p
+[Enter password: root]
+```
+
+```text
+mysql> CREATE DATABASE MY_DB;
 ```
 
 Install Drupal 9: `./vendor/bin/drush si`
@@ -248,14 +263,9 @@ Initial tables
 
 **Before that, create admin user**
 
-\*\*\*\*
-
-| drush user-create qidian --mail="diqi@ucsd.edu" --password="qidian"; drush user-add-role "administrator" adminuser |
-| :--- |
-
-
-  
-
+```text
+drush user-create qidian --mail="diqi@ucsd.edu" --password="qidian"; drush user-add-role "administrator" qidian
+```
 
 ![](../../.gitbook/assets/image.png)
 
@@ -812,4 +822,60 @@ export default class DestinationItem extends React.Component {
 * Simple tutorial
 * Primarily deployment
 * Show the power of DevDesktop that bundle all the environment for you
+
+## Extra
+
+### .gitignore template for Drupal
+
+```markup
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+
+# Ignore configuration files that may contain sensitive information
+/sites/*/*settings*.php
+/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/sites/*/files
+/sites/*/public
+/sites/*/private
+/sites/*/files-public
+/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/sites/*/translations
+/sites/*/tmp
+/sites/*/cache
+
+# Ignore testing related files
+/sites/simpletest
+
+# Ignore drupal core (if not versioning drupal sources)
+/core
+/vendor
+/modules/README.txt
+/profiles/README.txt
+/themes/README.txt
+/sites/README.txt
+/sites/example.sites.php
+/sites/example.settings.local.php
+/sites/development.services.yml
+/.csslintrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.json
+/.gitattributes
+/.ht.router.php
+/.htaccess
+/autoload.php
+/example.gitignore
+/index.php
+/INSTALL.txt
+/LICENSE.txt
+/README.txt
+/robots.txt
+/update.php
+/web.config
+```
 

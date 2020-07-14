@@ -76,6 +76,12 @@ $ cd <myproject>
 $ compass install compass --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images-dir "images"
 ```
 
+![](../.gitbook/assets/image%20%2853%29.png)
+
+```bash
+compass create --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images-dir "images"
+```
+
 ### Sass
 
 #### Interpolation 

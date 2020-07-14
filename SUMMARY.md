@@ -25,6 +25,7 @@
 * [Drupal](projects/drupal/README.md)
   * [Drupal 7 Module Development](projects/drupal/drupal-7.md)
   * [Drupal 7中的实体类型](projects/drupal/drupal-7-zhong-de-shi-ti-lei-bie.md)
+  * [Drupal 8 Entity API](projects/drupal/drupal-8-entity-api.md)
   * [Drupal 8 如何与React集成](projects/drupal/drupal-ru-he-yu-react-ji-cheng/README.md)
     * [Drupal的主题渲染](projects/drupal/drupal-ru-he-yu-react-ji-cheng/drupal-de-zhu-ti-xuan-ran.md)
     * [React逐步解耦](projects/drupal/drupal-ru-he-yu-react-ji-cheng/react-zhu-bu-jie-ou.md)
@@ -39,6 +40,7 @@
     * [使用Fetch和OAuth进行认证](projects/drupal/drupal-ru-he-yu-react-ji-cheng/shi-yong-fetch-he-oauth-jin-hang-ren-zheng.md)
   * [创建一个解耦的Drupal 9&React应用](projects/drupal/chuang-jian-yi-ge-jie-ou-de-drupal-9react-ying-yong.md)
 * [Git命令](projects/git-ming-ling.md)
+* [如何搭建类似Gitbook的平台](projects/ru-he-da-jian-lei-si-gitbook-de-ping-tai.md)
 
 ## Algorithms
 
