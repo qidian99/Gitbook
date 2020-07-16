@@ -14,6 +14,7 @@
 * [Drupal 7 Module Development \(Done\)](readings/drupal-7-module-development.md)
 * [Database Management Systems](readings/database-management-systems.md)
 * [The Art of Unix Programming](readings/the-art-of-unix-programming.md)
+* [Computer Networks](readings/computer-networks.md)
 
 ## Technology <a id="tech"></a>
 
