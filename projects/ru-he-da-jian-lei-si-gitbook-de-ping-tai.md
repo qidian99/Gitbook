@@ -19,6 +19,8 @@
 
 ### Layout
 
+{% embed url="https://www.figma.com/proto/uzMJfwRZ8DOSKV3AaY9jHR/Wireframe?node-id=1%3A2&scaling=min-zoom" %}
+
 ### Front-end
 
 ### Back-end
