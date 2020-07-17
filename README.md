@@ -131,5 +131,5 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ## **Why Blue**
 
-> **Blue** is the color of the sky and sea. It is often associated with depth and stability. It symbolizes trust, loyalty, wisdom, confidence, intelligence, faith, truth, and heaven. **Blue** is considered beneficial to the mind and body. It slows human metabolism and produces a calming effect.
+> ****
 
