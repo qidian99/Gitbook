@@ -68,7 +68,7 @@ To import your new stylesheets add the following lines of HTML (or equivalent) t
 </head>
 ```
 
-![Custom Compass Configuration](../.gitbook/assets/image%20%2843%29.png)
+![Custom Compass Configuration](../../.gitbook/assets/image%20%2843%29.png)
 
 ```bash
 $ gem install compass
@@ -76,7 +76,7 @@ $ cd <myproject>
 $ compass install compass --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images-dir "images"
 ```
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 ```bash
 compass create --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images-dir "images"
@@ -88,29 +88,29 @@ compass create --sass-dir "scss" --css-dir "css" --javascripts-dir "js" --images
 
 * `#{$VAR_NAME}`
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 #### mixins
 
-![Definition of a mixin](../.gitbook/assets/image%20%2849%29.png)
+![Definition of a mixin](../../.gitbook/assets/image%20%2849%29.png)
 
-![Include the mixin](../.gitbook/assets/image%20%2845%29.png)
+![Include the mixin](../../.gitbook/assets/image%20%2845%29.png)
 
 #### extend
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2847%29.png)
 
 #### partials and imports
 
 1. Create the \_base.scss file
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 2. Copy the previous scss in master file into the base file, and import the base file in master file
 
 Remember to first import the base file and then other files in the master file
 
-![You can use the variables declared in the base file](../.gitbook/assets/image%20%2842%29.png)
+![You can use the variables declared in the base file](../../.gitbook/assets/image%20%2842%29.png)
 
 3. In this way we can separate regions \(e.g., typology vs content\)
 
@@ -123,7 +123,7 @@ Remember to first import the base file and then other files in the master file
 
 #### Config.rb
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 ### Other tools to use with Sass
 
