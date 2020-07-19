@@ -21,6 +21,7 @@
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
+* [Backend](tech/backend.md)
 
 ## Projects & Tutorials <a id="projects"></a>
 
@@ -47,4 +48,8 @@
 ## Algorithms
 
 * [回溯](algorithms/hui-su.md)
+
+---
+
+* [Drupal 7自定义Views](drupal-7-zi-ding-yi-views.md)
 
