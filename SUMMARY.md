@@ -52,4 +52,5 @@
 ---
 
 * [Drupal 7自定义Views](drupal-7-zi-ding-yi-views.md)
+* [Drupal 7 and Javascript](drupal-7-and-javascript.md)
 
