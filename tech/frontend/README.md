@@ -132,3 +132,57 @@ Remember to first import the base file and then other files in the master file
 * Zen \(Written by Drupal Core contributor\)
 * Bourbon
 
+## If you cannot use gem
+
+{% embed url="https://stackoverflow.com/questions/27133929/gem-install-compass-wont-work" %}
+
+It happens because you want to sudo install and probably environment variables are not configured to use your installed ruby, instead it uses the system ruby which probably is not what you want to use.
+
+The easiest way to use Ruby on Mac is to install rbenv and ruby-build using homebrew.
+
+To install homebrew just run this command which can be found on [brew homepage](http://brew.sh/):
+
+```text
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+To install rbenv and ruby-build you can run these commands which can be found on [Github](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x):
+
+```text
+brew update
+brew install rbenv ruby-build
+```
+
+Forgot to add that for sure, then you need to install a ruby version using rbenv and make it global.
+
+```text
+rbenv install 2.7.1
+rbenv global 2.7.1
+```
+
+And finally:
+
+```text
+gem install compass
+```
+
+Just make sure that gem binary points to the version you've installed.  
+You can run `gem env` and checkout printed paths, if it doesn't point to newly installed ruby gem path, close the terminal and open a new one then install the gem.
+
+Here is the first few lines of what's printed out on my machine:
+
+```text
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.2.0
+  - RUBY VERSION: 2.1.0 (2013-12-25 patchlevel 0) [x86_64-darwin13.0]
+  - INSTALLATION DIRECTORY: /Users/jani/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0
+  ....
+  
+```
+
+### Weird things happened....
+
+I have to use xcodebuild of version 10.x
+
+![](../../.gitbook/assets/image%20%2854%29.png)
+

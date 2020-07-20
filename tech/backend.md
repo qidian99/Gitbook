@@ -9,7 +9,7 @@ SHOW FULL TABLES
 WHERE table_type = 'VIEW';
 ```
 
-### Show view definition
+### Show view definition \(somehow not working\)
 
 ```sql
 SHOW CREATE VIEW 'viewName'
@@ -25,4 +25,12 @@ SELECT  VIEW_DEFINITION
 ```
 
 returns only definition
+
+### Create the view using definition
+
+```sql
+CREATE VIEW test.v AS SELECT * FROM t;
+```
+
+### Resetting root user password
 
