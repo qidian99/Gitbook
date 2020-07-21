@@ -26,6 +26,9 @@
 ## Projects & Tutorials <a id="projects"></a>
 
 * [Drupal](projects/drupal/README.md)
+  * [AJAX in Drupal 7](projects/drupal/ajax-in-drupal-7.md)
+  * [Drupal 7 and Javascript](projects/drupal/drupal-7-and-javascript.md)
+  * [Drupal 7自定义Views](projects/drupal/drupal-7-zi-ding-yi-views.md)
   * [Drupal 7 Module Development](projects/drupal/drupal-7.md)
   * [Drupal 7中的实体类型](projects/drupal/drupal-7-zhong-de-shi-ti-lei-bie.md)
   * [Drupal 8 Entity API](projects/drupal/drupal-8-entity-api.md)
@@ -48,9 +51,4 @@
 ## Algorithms
 
 * [回溯](algorithms/hui-su.md)
-
----
-
-* [Drupal 7自定义Views](drupal-7-zi-ding-yi-views.md)
-* [Drupal 7 and Javascript](drupal-7-and-javascript.md)
 
