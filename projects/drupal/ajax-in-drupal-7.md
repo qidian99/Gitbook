@@ -49,3 +49,9 @@ Drupal.behaviors.tomsAjaxLinks = {
 })(jQuery);
 ```
 
+## AJAX Commands in Form API
+
+{% embed url="http://www.jaypan.com/tutorial/calling-function-after-ajax-event-drupal-7" %}
+
+
+
