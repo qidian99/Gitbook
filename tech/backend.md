@@ -34,3 +34,21 @@ CREATE VIEW test.v AS SELECT * FROM t;
 
 ### Resetting root user password
 
+I locate the mysqladmin under the mysql location, close the mysql service, sudo the mysqladmin and follow the help text to change the password for root user.
+
+### Copy/Move a table from one database to another
+
+{% embed url="https://stackoverflow.com/questions/12242772/easiest-way-to-copy-a-table-from-one-database-to-another" %}
+
+### Grant user privileges
+
+```sql
+GRANT ALL ON example_database.* TO 'example_user'@'%';
+```
+
+
+
+
+
+
+
