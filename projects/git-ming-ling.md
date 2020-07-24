@@ -48,3 +48,29 @@ git submodule update --init --recursive
 git pull --recurse-submodules
 ```
 
+## Compare changes
+
+{% embed url="https://stackoverflow.com/questions/12123633/differences-for-a-certain-folder-between-git-branches" %}
+
+```text
+git log --author=jdoe oldbranch..newbranch -p -- path/to/subdirectory > myChangesInSubdirectory.patch
+```
+
+### To apply a patch
+
+```text
+git apply patch_name
+```
+
+### To list the different between uncommited files and commited ones
+
+```text
+git diff <commit-ish>:./ -- <path>
+Examples:
+
+git diff origin/master:./ -- README.md
+git diff HEAD^:./ -- README.md
+git diff stash@{0}:./ -- README.md
+git diff 1A2B3C4D:./ -- README.md
+```
+
