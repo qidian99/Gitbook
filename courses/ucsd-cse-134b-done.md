@@ -2,7 +2,7 @@
 description: Client-side Web Programming
 ---
 
-# UCSD CSE 134B \(Done\)
+# UCSD CSE134B \(Done\)
 
 ## Mindmaps
 
