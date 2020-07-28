@@ -186,3 +186,11 @@ I have to use xcodebuild of version 10.x
 
 ![](../../.gitbook/assets/image%20%2854%29.png)
 
+## CSS
+
+### Collapsing margin
+
+{% embed url="https://stackoverflow.com/questions/13573653/css-margin-terror-margin-adds-space-outside-parent-element" %}
+
+
+
