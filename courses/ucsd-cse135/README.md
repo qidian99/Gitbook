@@ -6,6 +6,10 @@ description: Online Database Analytics Applications
 
 本科课程的一大弊端是，Intro部分重合度太高，而且没有文献阅读量，很多学生以为上课看PPT做PA就能懂个八九不离十了。
 
+![Tracking-1](../../.gitbook/assets/image%20%2855%29.png)
+
+![Tracking-2](../../.gitbook/assets/image%20%2856%29.png)
+
 ## Part 1: Fundamentals and Generation of App Patterns
 
 {% file src="../../.gitbook/assets/cse135\_part1.pdf" caption="Part 1" %}
