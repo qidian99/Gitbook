@@ -20,9 +20,13 @@ description: Online Database Analytics Applications
 
 ## Part 4: Server-Side Web Programming Intro
 
+{% file src="../../.gitbook/assets/cse135\_part4.pdf" caption="Part 4" %}
+
 ## Part 5: Sessions State and Session Management
+
+{% file src="../../.gitbook/assets/cse135\_part5.pdf" caption="Part 5" %}
 
 ## Part 6: Server-Side Tech Overview
 
-
+{% file src="../../.gitbook/assets/cse135\_part6.pdf" caption="Part 6" %}
 
