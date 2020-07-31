@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 
-## courses
+## 自学课程 <a id="courses"></a>
 
 * [CMU 15-721 \(Done\)](courses/cmu-15-721.md)
 * [UCSD CSE132C](courses/ucsd-cse132c.md)

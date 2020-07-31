@@ -52,5 +52,3 @@ description: Online Database Analytics Applications
 
 浮躁的时代人们更相信眼见为实。
 
-![](../../.gitbook/assets/image%20%2857%29.png)
-
