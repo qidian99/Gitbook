@@ -34,3 +34,23 @@ description: Online Database Analytics Applications
 
 {% file src="../../.gitbook/assets/cse135\_part6.pdf" caption="Part 6" %}
 
+## Part 7: CRUD, REST, MVC
+
+{% file src="../../.gitbook/assets/cse135\_part7.pdf" caption="Part 7" %}
+
+## Part 8: Data Visualization
+
+{% file src="../../.gitbook/assets/cse135\_part8-1.pdf" caption="Part 8 - 1" %}
+
+{% file src="../../.gitbook/assets/cse135\_part8-2.pdf" caption="Part 8 - 2" %}
+
+想到了有人用JMeter搭建的自动化测试平台。
+
+{% embed url="https://mp.weixin.qq.com/s/zQvCFQp9LoAtv48fAxf35A" %}
+
+和IBM当时用Kibana做的可视化。
+
+浮躁的时代人们更相信眼见为实。
+
+![](../../.gitbook/assets/image%20%2857%29.png)
+

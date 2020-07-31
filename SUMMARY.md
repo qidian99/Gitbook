@@ -6,9 +6,11 @@
 
 * [CMU 15-721 \(Done\)](courses/cmu-15-721.md)
 * [UCSD CSE132C](courses/ucsd-cse132c.md)
+* [UCSD CSE112](courses/ucsd-cse112.md)
 * [UCSD CSE134B \(Done\)](courses/ucsd-cse-134b-done.md)
 * [UCSD CSE135](courses/ucsd-cse135/README.md)
   * [PHP](courses/ucsd-cse135/php.md)
+* [UCSD CSE136](courses/ucsd-cse136.md)
 
 ## Readings
 
