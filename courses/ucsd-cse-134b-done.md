@@ -20,5 +20,11 @@ description: Client-side Web Programming
 
 {% file src="../.gitbook/assets/cse134b\_dom\_api.pdf" caption="DOM API" %}
 
+### AJAX: The Complete Reference
+
+{% page-ref page="../readings/ajax-the-complete-reference.md" %}
+
+
+
 
 

@@ -17,6 +17,7 @@
 * [The Design of Everyday Things \(Done\)](readings/the-design-of-everyday-things.md)
 * [Zero to One \(Done\)](readings/zero-to-one.md)
 * [Drupal 7 Module Development \(Done\)](readings/drupal-7-module-development.md)
+* [AJAX: The Complete Reference](readings/ajax-the-complete-reference.md)
 * [Database Management Systems](readings/database-management-systems.md)
 * [The Art of Unix Programming](readings/the-art-of-unix-programming.md)
 * [Computer Networks](readings/computer-networks.md)
