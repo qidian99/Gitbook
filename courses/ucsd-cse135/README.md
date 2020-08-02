@@ -2,7 +2,7 @@
 description: Online Database Analytics Applications
 ---
 
-# UCSD CSE135
+# UCSD CSE135 \(Done\)
 
 本科课程的一大弊端是，Intro部分重合度太高，而且没有文献阅读量，很多学生以为上课看PPT做PA就能懂个八九不离十了。
 
