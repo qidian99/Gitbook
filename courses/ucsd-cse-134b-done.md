@@ -24,7 +24,9 @@ description: Client-side Web Programming
 
 {% page-ref page="../readings/ajax-the-complete-reference.md" %}
 
+{% file src="../.gitbook/assets/cse134b\_performance\_and\_metrics.pdf" caption="Performance and Metrics" %}
 
+{% file src="../.gitbook/assets/cse134b\_web\_component.pdf" caption="Web Components Past, Present and Future" %}
 
 
 
