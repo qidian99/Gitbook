@@ -57,3 +57,7 @@
 
 * [回溯](algorithms/hui-su.md)
 
+---
+
+* [Union Find](union-find.md)
+
