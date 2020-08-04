@@ -26,6 +26,7 @@
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
+  * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
 * [Backend](tech/backend.md)
 
 ## Projects & Tutorials <a id="projects"></a>
@@ -56,9 +57,5 @@
 ## Algorithms
 
 * [回溯](algorithms/hui-su.md)
-
----
-
-* [Union Find](union-find.md)
-* [Use Preact to Create Web Components](use-preact-to-create-web-components.md)
+* [Union Find](algorithms/union-find.md)
 
