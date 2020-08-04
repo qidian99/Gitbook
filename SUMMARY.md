@@ -60,4 +60,5 @@
 ---
 
 * [Union Find](union-find.md)
+* [Use Preact to Create Web Components](use-preact-to-create-web-components.md)
 
