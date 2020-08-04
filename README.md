@@ -49,7 +49,7 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ![](.gitbook/assets/img_1624.jpg)
 
-### K-12文档配送
+### K-12文档配送用户端移动应用
 
 * 实习项目，为北美不同学区的学校提供AUP，VPC，Permission Slip等文档的配送
 * 遵守COPPA，CIPA，FERPA，PPRA对未成年人和学生的隐私进行保护
