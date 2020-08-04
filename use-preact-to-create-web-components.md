@@ -204,6 +204,12 @@ var MyComponent = () => (
 var ShadowMyComponent = ShadowDOM(MyComponent, styles);
 ```
 
+## Use LESS
+
+```text
+ npm install --save-dev less less-loader
+```
+
 ## Define allowed props value
 
 {% embed url="https://reactjs.org/docs/typechecking-with-proptypes.html" %}
@@ -216,5 +222,5 @@ var ShadowMyComponent = ShadowDOM(MyComponent, styles);
 
 {% embed url="https://developers.google.com/web/fundamentals/web-components/best-practices" %}
 
-
+## 
 

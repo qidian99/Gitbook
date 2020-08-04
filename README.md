@@ -6,6 +6,15 @@ description: 'Projects, Algorithms, Courses, Designs, and Readings'
 
 ## 项目
 
+### 学区级电子文档投放管理
+
+* 为北美K-12不同学区和学校管理员提供投放管理平台。支持不同类型的电子文档的动态生成，内部审核评论，选择发送给不同的学生、家长、教师并进行追踪等功能。
+* 文档中可以插入不同的多媒体类型，自定义问题，水印和签名。并根据文档的完成情况生成不同的报表。
+* 为公司开发者设计了使用Drupal 7自定义模块，PHP进行耦合应用开发的框架。
+* 阅读并实践了Drupal 7模块开发一书，独自负责了管理员中心界面的全栈开发，设计实现了基于Ajax和SPA理念的路由控制器，用于动态/惰性载入后端模板界面。
+* 和不同教授、企业家交流Drupal等legacy CMS在市场中的应用，讨论了Headless CMS的优劣。
+* 从轻量级和原生的角度出发，基于Preact和HTMLElement Spec v1为开发者建立创建自定义元素的框架，用于Drupal的SSR。减轻了Drupal前后端的耦合程度\(Progressively Decoupled\)
+
 ### CORE Platform
 
 * UCSD RECODE Health实验室项目
