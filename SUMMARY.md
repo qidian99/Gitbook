@@ -25,6 +25,7 @@
 
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
+  * [Preact](tech/frontend/preact.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
