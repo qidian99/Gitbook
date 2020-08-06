@@ -192,5 +192,13 @@ I have to use xcodebuild of version 10.x
 
 {% embed url="https://stackoverflow.com/questions/13573653/css-margin-terror-margin-adds-space-outside-parent-element" %}
 
+## JQuery
 
+### Inject JQuery
+
+Add a tab in Chrome:
+
+```text
+javascript:(function(e,s){e.src=s;e.onload=function(){jQuery.noConflict();console.log('jQuery injected')};document.head.appendChild(e);})(document.createElement('script'),'//code.jquery.com/jquery-latest.min.js')
+```
 

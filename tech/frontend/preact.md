@@ -29,7 +29,7 @@ this is an example when you are using preact with vanilla JS.
 
 {% embed url="https://github.com/videojs/videojs-youtube" %}
 
-
+Together with `@vimeo/player`
 
 
 
