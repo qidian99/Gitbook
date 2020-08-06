@@ -21,3 +21,15 @@ myComponent.addEventListener('my-event', e => {
 
 this is an example when you are using preact with vanilla JS.
 
+## VideoJS Vimeo
+
+{% embed url="https://github.com/Mobiliza/videojs-vimeo" %}
+
+## VideoJS Youtube
+
+{% embed url="https://github.com/videojs/videojs-youtube" %}
+
+
+
+
+
