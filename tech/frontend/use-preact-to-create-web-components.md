@@ -72,6 +72,14 @@ $ preact build
 browserify BUNDLE.js -o YOUR_CUSTOM_ELEMENT.js
 ```
 
+## Export bundle SH script
+
+```bash
+preact build --no-prerender --template ./src/wcs/index.js --src ./src/wcs --dest wcs
+find wcs ! -name '*.esm.*' -name "bundle.*.js" -exec browserify {} -o dist/isd-wc.js \;
+find wcs ! -name '*.esm.*' -name "bundle.*.css" -exec cp {} dist/isd-wc.css \;
+```
+
 ## Example by Dian
 
 ### Wrap Preact components in custom element
