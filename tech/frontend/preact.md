@@ -51,5 +51,27 @@ The biggest difference between Vimeo and HTML5 videos is that one uses `seeked` 
 
 Together with `@vimeo/player`
 
+### Progress control disable in VideoJS
 
+{% code title="line 14981" %}
+```javascript
+ ProgressControl.prototype.disable = function disable() {
+    this.children().forEach(function (child) {
+      return child.disable && child.disable();
+    });
+
+    if (!this.enabled()) {
+      return;
+    }
+
+    this.off(['mousedown', 'touchstart'], this.handleMouseDown);
+    this.off(this.el_, 'mousemove', this.handleMouseMove);
+    this.handleMouseUp();
+
+    this.addClass('disabled');
+
+    this.enabled_ = false;
+  };
+```
+{% endcode %}
 
