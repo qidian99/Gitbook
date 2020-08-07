@@ -25,6 +25,26 @@ this is an example when you are using preact with vanilla JS.
 
 {% embed url="https://github.com/Mobiliza/videojs-vimeo" %}
 
+### Disable Seek
+
+{% embed url="https://github.com/vimeo/player.js/issues/356" %}
+
+{% embed url="https://jsfiddle.net/jybleau/zes4hbdd/" %}
+
+#### Github issue
+
+{% embed url="https://github.com/vimeo/player.js/issues/356" %}
+
+The most intriguing part is when user drags the timepoint. If I stop the video it gets crazy and drop never happens.
+
+The biggest difference between Vimeo and HTML5 videos is that one uses `seeked` while the other uses `seeking`. Not the same. Plus, using `setCurrentTime` fires again `seeked`
+
+### Disable Seek 2
+
+{% embed url="https://jsfiddle.net/jybleau/7Lhtcvxk/" %}
+
+[https://github.com/vimeo/player.js/issues/61](https://github.com/vimeo/player.js/issues/61)
+
 ## VideoJS Youtube
 
 {% embed url="https://github.com/videojs/videojs-youtube" %}

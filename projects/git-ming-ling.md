@@ -74,3 +74,9 @@ git diff stash@{0}:./ -- README.md
 git diff 1A2B3C4D:./ -- README.md
 ```
 
+## Git rebase
+
+{% embed url="http://weblog.avp-ptr.de/20120928/git-how-to-copy-a-range-of-commits-from-one-branch-to-another/" %}
+
+
+
