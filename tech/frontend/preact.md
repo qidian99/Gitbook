@@ -75,3 +75,15 @@ Together with `@vimeo/player`
 ```
 {% endcode %}
 
+## E-signature
+
+{% embed url="https://codepen.io/dus7/pen/qGQbVP" %}
+
+## useCallback
+
+_“Every callback function should be memoized to prevent useless re-rendering of child components which use the callback function”_ is the reasoning of his teammates.
+
+{% embed url="https://dmitripavlutin.com/dont-overuse-react-usecallback/" %}
+
+
+
