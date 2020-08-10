@@ -20,5 +20,9 @@ description: >-
 
 {% file src="../.gitbook/assets/dbms\_chapter2.pdf" %}
 
+### Chapter 03: The Relational Model
+
+{% file src="../.gitbook/assets/dbms\_chapter4.pdf" caption="" %}
+
 
 

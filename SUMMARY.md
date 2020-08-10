@@ -25,6 +25,7 @@
 
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
+  * [Regular Expressions](tech/frontend/regular-expressions.md)
   * [Preact](tech/frontend/preact.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
@@ -60,8 +61,4 @@
 
 * [回溯](algorithms/hui-su.md)
 * [Union Find](algorithms/union-find.md)
-
----
-
-* [Regular Expressions](regular-expressions.md)
 
