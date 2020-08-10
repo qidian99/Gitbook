@@ -30,7 +30,8 @@
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
-* [Backend](tech/backend.md)
+* [Backend](tech/backend/README.md)
+  * [Algolia](tech/backend/algolia.md)
 
 ## Projects & Tutorials <a id="projects"></a>
 
