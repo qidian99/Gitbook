@@ -22,7 +22,7 @@ description: >-
 
 ### Chapter 03: The Relational Model
 
-{% file src="../.gitbook/assets/dbms\_chapter4 \(1\).pdf" caption="" %}
+{% file src="../.gitbook/assets/dbms\_chapter3.pdf" caption="" %}
 
 ### Chapter 04: Relational Algebra and Calculus
 
