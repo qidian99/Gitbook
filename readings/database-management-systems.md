@@ -28,5 +28,9 @@ description: >-
 
 {% file src="../.gitbook/assets/dbms\_chapter4.pdf" %}
 
+### Chapter 05: SQL Queries, Constraints, Triggers
+
+{% file src="../.gitbook/assets/dbms\_chapter5.pdf" %}
+
 
 
