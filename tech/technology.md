@@ -8,6 +8,10 @@
 
 {% embed url="https://news.ycombinator.com/item?id=23417046&ref=hvper.com&utm\_source=hvper.com&utm\_medium=website" %}
 
+### BGP劫持
+
+{% embed url="https://mp.weixin.qq.com/s/N1VVbkNw9E4WHyv-0IEwOg" %}
+
 
 
 
