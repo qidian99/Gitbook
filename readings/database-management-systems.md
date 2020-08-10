@@ -32,5 +32,9 @@ description: >-
 
 {% file src="../.gitbook/assets/dbms\_chapter5.pdf" %}
 
+### Chapter 06: Database Application Development
+
+{% file src="../.gitbook/assets/dbms\_chapter6.pdf" %}
+
 
 
