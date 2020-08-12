@@ -24,6 +24,7 @@
 
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
+  * [Chart](tech/frontend/chart.md)
   * [Regular Expressions](tech/frontend/regular-expressions.md)
   * [Preact](tech/frontend/preact.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
