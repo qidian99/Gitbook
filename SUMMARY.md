@@ -30,6 +30,7 @@
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
 * [Backend](tech/backend/README.md)
+  * [Prestashop](tech/backend/prestashop.md)
   * [PHP & Apache](tech/backend/php.md)
   * [Prometheus and Grafana](tech/backend/prometheus-and-grafana.md)
   * [Algolia](tech/backend/algolia.md)
