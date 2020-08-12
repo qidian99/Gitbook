@@ -8,8 +8,7 @@
 * [UCSD CSE132C](courses/ucsd-cse132c.md)
 * [UCSD CSE112](courses/ucsd-cse112.md)
 * [UCSD CSE134B \(Done\)](courses/ucsd-cse-134b-done.md)
-* [UCSD CSE135 \(Done\)](courses/ucsd-cse135/README.md)
-  * [PHP](courses/ucsd-cse135/php.md)
+* [UCSD CSE135 \(Done\)](courses/ucsd-cse135.md)
 
 ## Readings
 
@@ -31,6 +30,7 @@
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
 * [Backend](tech/backend/README.md)
+  * [PHP & Apache](tech/backend/php.md)
   * [Prometheus and Grafana](tech/backend/prometheus-and-grafana.md)
   * [Algolia](tech/backend/algolia.md)
 

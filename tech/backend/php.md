@@ -1,4 +1,4 @@
-# PHP
+# PHP & Apache
 
 ## Utility functions
 
@@ -30,4 +30,18 @@ Sometimes, the session id is not stored in a cookie, but sent in URLs, too -- bu
 For more informations, you can take a look at the [Session Handling](http://php.net/manual/en/book.session.php) section of the manual, that gives some useful informations.
 
 For instance, there is a page about [Passing the Session ID](http://php.net/manual/en/session.idpassing.php), which explains how the session id is passed from page to page, using a cookie, or in URLs -- and which configuration options affect this
+
+## Local server \(MacOS\)
+
+{% embed url="https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps" %}
+
+### Set up virtual hosts
+
+{% embed url="https://superuser.com/questions/1129654/apache-showing-php-code-after-upgrade-on-mac-to-macos-sierra\#comment2049492\_1131117" %}
+
+### Virtual host showing PHP code error
+
+{% embed url="https://jasonmccreary.me/articles/configure-apache-virtualhost-mac-os-x/" %}
+
+
 
