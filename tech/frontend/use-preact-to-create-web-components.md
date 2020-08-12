@@ -179,6 +179,14 @@ browserify wcs/ssr-build/ssr-bundle.js -o /Users/qidian/Sites/devdesktop/drupal-
 cp wcs/ssr-build/ssr-bundle.*.css /Users/qidian/Sites/devdesktop/drupal-7.72/sites/default/modules/ISAFE\ Direct/isd_web_components/css/isd-wc.css
 ```
 
+```bash
+preact build --template ./src/wcs/index.js --src ./src/wcs --dest wcs
+# find wcs ! -name '*.esm.*' -name "bundle.*.js" -exec browserify {} -o dist/isd-wc.js \;
+# find wcs ! -name '*.esm.*' -name "bundle.*.css" -exec cp {} dist/isd-wc.css \;
+find wcs/ssr-build -name "ssr-bundle.js" -exec browserify {} -o dist/isd-wc.js \;
+find wcs/ssr-build -name "ssr-bundle.*.css" -exec cp {} dist/isd-wc.css \;
+```
+
 ## Use Shadow DOM
 
 ```text
