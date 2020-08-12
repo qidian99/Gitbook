@@ -192,6 +192,17 @@ I have to use xcodebuild of version 10.x
 
 {% embed url="https://stackoverflow.com/questions/13573653/css-margin-terror-margin-adds-space-outside-parent-element" %}
 
+### Disable scrollbar
+
+```text
+ -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+```
+
 ## JQuery
 
 ### Inject JQuery
@@ -200,5 +211,29 @@ Add a tab in Chrome:
 
 ```text
 javascript:(function(e,s){e.src=s;e.onload=function(){jQuery.noConflict();console.log('jQuery injected')};document.head.appendChild(e);})(document.createElement('script'),'//code.jquery.com/jquery-latest.min.js')
+```
+
+## Event Listener one-off
+
+{% embed url="https://medium.com/beginners-guide-to-mobile-web-development/one-off-event-listeners-in-javascript-92e19c4c0336" %}
+
+
+
+```javascript
+let clickButton = document.getElementById('btn');
+
+createOneTimeListener(clickButton, 'click', function() {
+	alert('Thanks for clicking');
+});
+
+function createOneTimeListener(element, event, listener) {
+	// first we call addEventListener on element with event name
+	// then inside the callback function, we first un-register the listener
+	// and return the original listener passed to attach it with the event
+	element.addEventListener(event, function() {
+		element.removeEventListener(event, arguments.callee);
+		return listener();
+	});
+}
 ```
 

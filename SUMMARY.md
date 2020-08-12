@@ -31,6 +31,7 @@
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
 * [Backend](tech/backend/README.md)
+  * [Prometheus and Grafana](tech/backend/prometheus-and-grafana.md)
   * [Algolia](tech/backend/algolia.md)
 
 ## Projects & Tutorials <a id="projects"></a>
