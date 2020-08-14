@@ -256,5 +256,19 @@ import ReactModal from 'react-modal';
 
 {% embed url="https://ozmoroz.com/2019/03/react-css-transitions/" %}
 
+## Pagination
+
+{% embed url="https://codepen.io/cornflourblue/pen/oZZzLr" %}
+
+## Ref propTypes issue
+
+{% embed url="https://github.com/preactjs/preact/issues/2682" %}
+
+{% embed url="https://codesandbox.io/s/issue-1824-1sjge" %}
+
+### Fix:
+
+{% embed url="https://github.com/preactjs/preact/pull/2685" %}
+
 
 
