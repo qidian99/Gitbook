@@ -270,5 +270,9 @@ import ReactModal from 'react-modal';
 
 {% embed url="https://github.com/preactjs/preact/pull/2685" %}
 
-## 
+## Path
+
+{% embed url="https://medium.com/@leonardobrunolima/react-tips-working-with-relative-path-using-create-react-app-fe55c5f97a21" %}
+
+
 
