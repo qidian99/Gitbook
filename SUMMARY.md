@@ -74,3 +74,7 @@
 * [Union Find](algorithms/union-find.md)
 * [RSA](algorithms/rsa.md)
 
+---
+
+* [Self Intro](self-intro.md)
+
