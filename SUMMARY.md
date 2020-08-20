@@ -72,3 +72,7 @@
 * [Union Find](algorithms/union-find.md)
 * [RSA](algorithms/rsa.md)
 
+---
+
+* [MYSQL](mysql.md)
+
