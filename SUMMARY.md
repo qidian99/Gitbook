@@ -24,6 +24,7 @@
 
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
+  * [Date](tech/frontend/date.md)
   * [Localization](tech/frontend/localization.md)
   * [Webpack](tech/frontend/webpack.md)
   * [Material UI](tech/frontend/material-ui.md)
