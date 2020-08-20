@@ -36,6 +36,8 @@
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
 * [Backend](tech/backend/README.md)
+  * [隔离级别](tech/backend/ge-li-ji-bie.md)
+  * [MYSQL](tech/backend/mysql.md)
   * [Prestashop](tech/backend/prestashop.md)
   * [PHP & Apache](tech/backend/php.md)
   * [Prometheus and Grafana](tech/backend/prometheus-and-grafana.md)
@@ -71,8 +73,4 @@
 * [回溯](algorithms/hui-su.md)
 * [Union Find](algorithms/union-find.md)
 * [RSA](algorithms/rsa.md)
-
----
-
-* [MYSQL](mysql.md)
 
