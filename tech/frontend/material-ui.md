@@ -89,5 +89,19 @@ export const theme = createMuiTheme({
 
 ```
 
+## Spacing
 
+As per the docs
+
+* xs, extra-small: 0px or larger
+* sm, small: 600px or larger
+* md, medium: 960px or larger
+* lg, large: 1280px or larger
+* xl, extra-large: 1920px or larger
+
+Reference [https://material-ui.com/layout/breakpoints/](https://material-ui.com/layout/breakpoints/)
+
+> For example what would be the reason for providing xs={true} or md={false} be? And how might I have learned the reason on my own? \(is there some fundamental knowledge I'm lacking?\)
+
+This `xs={true}` means that the column will take up an equal space that is in a given row
 
