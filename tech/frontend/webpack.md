@@ -21,5 +21,13 @@ export default (config, env, helpers) => {
 ```
 {% endcode %}
 
+## Bunde
 
+### Difference between different js bundles
+
+{% embed url="https://www.davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/" %}
+
+### multiple formats
+
+[https://tech.trivago.com/2015/12/17/export-multiple-javascript-module-formats/](https://tech.trivago.com/2015/12/17/export-multiple-javascript-module-formats/)
 

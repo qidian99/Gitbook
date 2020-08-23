@@ -237,3 +237,17 @@ function createOneTimeListener(element, event, listener) {
 }
 ```
 
+## React PDF
+
+{% embed url="https://codesandbox.io/s/react-pdf-demo-i1ted?from-embed=&file=/src/Movie.jsx" %}
+
+{% embed url="https://dev.to/finallynero/generating-pdf-documents-in-react-using-react-pdf-4ka7" %}
+
+{% embed url="https://github.com/preactjs/preact-cli/blob/6742f94664cf88ca0159f809e715fd441495e653/src/lib/webpack/webpack-base-config.js\#L245" %}
+
+{% embed url="https://github.com/browserify/node-util/issues/17" %}
+
+{% embed url="https://github.com/wojtekmaj/react-pdf/issues/179" %}
+
+
+
