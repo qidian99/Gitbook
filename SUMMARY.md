@@ -79,4 +79,5 @@
 
 * [Self Intro](self-intro.md)
 * [GSAP and ScrollMagic](gsap.md)
+* [React GSAP Tweak](react-gsap-tweak.md)
 

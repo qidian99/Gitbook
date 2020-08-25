@@ -103,5 +103,17 @@ import ScrollMagic from "ScrollMagic";
 
 {% embed url="https://greensock.com/gsap3-features/" %}
 
+## SOLVED! Invalid setTween
+
+Original animation.gsap.js plugin for ScrollMagic is not compatible with ES6 modules, so it's causing a number of problems to add it in ES6 environment. Use this module to simple wrap ScrollMagic with animation.gsap.js in ES6. 
+
+`npm install --save scrollmagic-plugin-gsap`import \* as ScrollMagic from "scrollmagic"; // Or use scrollmagic-with-ssr to avoid server rendering problemsimport gsap from "gsap";  // Also works with TweenLite and TimelineLite: import { TweenMax, TimelineMax } from "gsap";import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap"; ScrollMagicPluginGsap\(ScrollMagic, gsap\); // There you can use setTween\(\) in ScrollMagic Scene with no problems
+
+{% embed url="https://greensock.com/forums/topic/21959-how-can-i-use-gsap-3-with-scroll-magic/" %}
+
+## Warning: Tween Override by another
+
+{% embed url="https://github.com/janpaepke/ScrollMagic/wiki/WARNING:-tween-was-overwritten-by-another" %}
+
 
 
