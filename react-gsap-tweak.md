@@ -106,11 +106,13 @@ I hope this solution will work for you. In any case you can reach me for help.
 
 {% embed url="https://github.com/janpaepke/ScrollMagic/issues/665" %}
 
+Note: I also changed all `scrollmagic` to `ScrollMagic`
+
 {% tabs %}
 {% tab title="Fix 1" %}
 {% code title="debug.addIndicators.js" %}
 ```javascript
-import ScrollMagic from "scrollmagic";
+import ScrollMagic from "ScrollMagic";
 
 /*!
  * ScrollMagic v2.0.7 (2019-05-07)
@@ -138,7 +140,7 @@ import ScrollMagic from "scrollmagic";
 		define(['ScrollMagic'], factory);
 	} else if (typeof exports === 'object') {
 		// CommonJS
-		factory(require('scrollmagic'));
+		factory(require('ScrollMagic'));
 	} else {
 		// no browser global export needed, just execute
 		factory(ScrollMagic || (jQuery && jQuery.ScrollMagic));
@@ -800,8 +802,8 @@ import ScrollMagic from "scrollmagic";
 {% tab title="Fix 2" %}
 {% code title="animation.gsap.js" %}
 ```javascript
-import { TimelineMax, TweenMax, TweenLite } from "gsap/all";
-import ScrollMagic from "scrollmagic";
+import { TimelineMax, TweenMax, TweenLite } from "gsap";
+import ScrollMagic from "ScrollMagic";
 
 /*!
  * ScrollMagic v2.0.7 (2019-05-07)
@@ -838,7 +840,7 @@ import ScrollMagic from "scrollmagic";
 		// CommonJS
 		// Loads whole gsap package onto global scope.
 		require('gsap');
-		factory(require('scrollmagic'), TweenMax, TimelineMax);
+		factory(require('ScrollMagic'), TweenMax, TimelineMax);
 	} else {
 		// Browser globals
 		factory(ScrollMagic || (jQuery && jQuery.ScrollMagic), TweenMax || TweenLite, TimelineMax || TimelineLite);
