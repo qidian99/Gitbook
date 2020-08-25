@@ -23,7 +23,8 @@ const webpack = require("webpack");
 import path from 'path';
 import { lstatSync, readdirSync } from 'fs';
 
-const gsapPath = "/node_modules/gsap/src/uncompressed/";
+const gsapPath = "node_modules/gsap/src/uncompressed/";
+const scrollMagicPath = "node_modules/scrollmagic/scrollmagic/uncompressed/";
 
 const isDirectory = source => lstatSync(source).isDirectory();
 const getDirectories = source =>
@@ -44,9 +45,9 @@ export default (config, env, helpers) => {
   aliases["TweenMax"] = "gsap";
   aliases["TimelineLite"] = "gsap";
   aliases["TimelineMax"] = "gsap";
-  aliases["ScrollMagic"] = path.resolve(__dirname,  gsapPath + 'ScrollMagic.js');
-  aliases["animation.gsap"] = path.resolve(__dirname, gsapPath + 'plugins/animation.gsap.js');
-  aliases["debug.addIndicators"] = path.resolve(__dirname, gsapPath + 'plugins/debug.addIndicators.js');
+  aliases["ScrollMagic"] = path.resolve(__dirname, scrollMagicPath + 'ScrollMagic.js');
+  aliases["animation.gsap"] = path.resolve(__dirname, scrollMagicPath + 'plugins/animation.gsap.js');
+  aliases["debug.addIndicators"] = path.resolve(__dirname, scrollMagicPath + 'plugins/debug.addIndicators.js');
   aliases["Draggable"] = path.resolve(__dirname, gsapPath + "utils/Draggable.js");
   aliases["ScrollToPlugin"] = path.resolve(__dirname, gsapPath + "plugins/ScrollToPlugin.js");
 
@@ -64,8 +65,11 @@ export default (config, env, helpers) => {
   }));
 }
 
-
 ```
+
+## GSAP: Invalid property cycle
+
+{% embed url="https://greensock.com/forums/topic/22001-gsap-3-upgrade-issues/" %}
 
 
 
@@ -88,4 +92,16 @@ aliases["ScrollMagic"] = path.resolve(__dirname,  'node_modules/scrollmagic/scro
 // In module
 import ScrollMagic from "ScrollMagic";
 ```
+
+## GSAP 3 and scrollmagic
+
+### GSAP3 API
+
+{% embed url="https://greensock.com/gsap3-features\#h2-2-simplified-api" %}
+
+### GSAP3 Stagger
+
+{% embed url="https://greensock.com/gsap3-features/" %}
+
+
 
