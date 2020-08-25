@@ -78,4 +78,5 @@
 ---
 
 * [Self Intro](self-intro.md)
+* [GSAP](gsap.md)
 
