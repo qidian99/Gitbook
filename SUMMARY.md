@@ -78,5 +78,5 @@
 ---
 
 * [Self Intro](self-intro.md)
-* [GSAP](gsap.md)
+* [GSAP and ScrollMagic](gsap.md)
 
