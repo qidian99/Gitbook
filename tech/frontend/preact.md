@@ -4,7 +4,7 @@
 
 {% embed url="https://preactjs.com/guide/v10/refs/" %}
 
-### Forward Refs
+### Foward Refs
 
 {% embed url="https://stackoverflow.com/questions/47055464/how-to-assign-refs-to-multiple-components" %}
 
@@ -274,13 +274,7 @@ import ReactModal from 'react-modal';
 
 {% embed url="https://github.com/preactjs/preact/pull/2685" %}
 
-## Trigger resize on div
-
 ## Path
-
-{% embed url="https://stackoverflow.com/questions/37775020/trigger-resize-event-on-component" %}
-
-{% embed url="https://www.npmjs.com/package/react-resize-detector" %}
 
 {% embed url="https://medium.com/@leonardobrunolima/react-tips-working-with-relative-path-using-create-react-app-fe55c5f97a21" %}
 
