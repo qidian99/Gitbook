@@ -85,5 +85,5 @@
 * [GSAP and ScrollMagic](gsap.md)
 * [React ScrollMagic](react-gsap-tweak.md)
 * [AMD](amd.md)
-* [GSAP Animation Gallery](gsap-animation-gallery.md)
+* [Animation Gallery](gsap-animation-gallery.md)
 
