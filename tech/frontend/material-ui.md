@@ -105,3 +105,9 @@ Reference [https://material-ui.com/layout/breakpoints/](https://material-ui.com/
 
 This `xs={true}` means that the column will take up an equal space that is in a given row
 
+## Toolbar
+
+{% embed url="https://github.com/mui-org/material-ui/issues/10076\#issuecomment-361232810" %}
+
+
+
