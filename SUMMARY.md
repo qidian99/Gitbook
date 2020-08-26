@@ -24,6 +24,7 @@
 
 * [News](tech/technology.md)
 * [Frontend](tech/frontend/README.md)
+  * [Lottie](tech/frontend/lottie.md)
   * [Date](tech/frontend/date.md)
   * [Localization](tech/frontend/localization.md)
   * [Webpack](tech/frontend/webpack.md)
@@ -77,7 +78,10 @@
 
 ---
 
+* [Binary Tree](binary-tree.md)
+* [Linked List](linked-list.md)
 * [Self Intro](self-intro.md)
+* [3D Transformation](3d-transformation.md)
 * [GSAP and ScrollMagic](gsap.md)
 * [React ScrollMagic](react-gsap-tweak.md)
 * [AMD](amd.md)

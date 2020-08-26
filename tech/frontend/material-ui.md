@@ -93,6 +93,12 @@ export const theme = createMuiTheme({
 
 As per the docs
 
+## Ripple animation
+
+{% embed url="https://medium.com/@dhilipkmr/ripple-in-react-3162875cc9af" %}
+
+
+
 * xs, extra-small: 0px or larger
 * sm, small: 600px or larger
 * md, medium: 960px or larger
