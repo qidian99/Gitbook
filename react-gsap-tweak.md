@@ -1486,3 +1486,15 @@ var TweenLite = require('gsap').TweenLite;
 
 ```
 
+## Examples
+
+Toggle
+
+{% embed url="https://codesandbox.io/s/gsap-hamburger-toggle-menu-forked-9fk6z?file=/src/App.js:265-273" %}
+
+Scrollmagic advanced tweening
+
+{% embed url="https://scrollmagic.io/examples/advanced/advanced\_tweening.html" %}
+
+
+
