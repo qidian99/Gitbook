@@ -4,9 +4,33 @@
 
 {% embed url="https://preactjs.com/guide/v10/refs/" %}
 
-### Foward Refs
+### Forward Refs
 
 {% embed url="https://stackoverflow.com/questions/47055464/how-to-assign-refs-to-multiple-components" %}
+
+#### Good Solution
+
+{% embed url="https://stackoverflow.com/questions/54633690/how-can-i-use-multiple-refs-for-an-array-of-elements-with-hooks" %}
+
+```javascript
+const App = props => {
+    const itemsRef = useRef([]);
+    // you can access the elements with itemsRef.current[n]
+
+    useEffect(() => {
+       itemsRef.current = itemsRef.current.slice(0, props.items.length);
+    }, [props.items]);
+
+    return props.items.map((item, i) => (
+      <div 
+          key={i} 
+          ref={el => itemsRef.current[i] = el} 
+          style={{ width: `${(i + 1) * 100}px` }}>
+        ...
+      </div>
+    ));
+}
+```
 
 ## Dispatch event to parent
 
@@ -274,7 +298,13 @@ import ReactModal from 'react-modal';
 
 {% embed url="https://github.com/preactjs/preact/pull/2685" %}
 
+## Trigger resize on div
+
 ## Path
+
+{% embed url="https://stackoverflow.com/questions/37775020/trigger-resize-event-on-component" %}
+
+{% embed url="https://www.npmjs.com/package/react-resize-detector" %}
 
 {% embed url="https://medium.com/@leonardobrunolima/react-tips-working-with-relative-path-using-create-react-app-fe55c5f97a21" %}
 
