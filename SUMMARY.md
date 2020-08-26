@@ -32,7 +32,7 @@
   * [NPM](tech/frontend/npm.md)
   * [Chart](tech/frontend/chart.md)
   * [Regular Expressions](tech/frontend/regular-expressions.md)
-  * [Preact](tech/frontend/preact.md)
+  * [Preact & React](tech/frontend/preact.md)
   * [Bootstrap框架](tech/frontend/bootstrap-framework.md)
   * [Use Preact to Create Web Components](tech/frontend/use-preact-to-create-web-components.md)
   * [React, Preact, and Inferno](tech/frontend/react-preact-and-inferno.md)
@@ -79,5 +79,6 @@
 
 * [Self Intro](self-intro.md)
 * [GSAP and ScrollMagic](gsap.md)
-* [React GSAP Tweak](react-gsap-tweak.md)
+* [React ScrollMagic](react-gsap-tweak.md)
+* [AMD](amd.md)
 

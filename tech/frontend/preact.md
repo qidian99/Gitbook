@@ -1,8 +1,12 @@
-# Preact
+# Preact & React
 
 ## Refs
 
 {% embed url="https://preactjs.com/guide/v10/refs/" %}
+
+### Foward Refs
+
+{% embed url="https://stackoverflow.com/questions/47055464/how-to-assign-refs-to-multiple-components" %}
 
 ## Dispatch event to parent
 
