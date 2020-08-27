@@ -115,5 +115,11 @@ This `xs={true}` means that the column will take up an equal space that is in a 
 
 {% embed url="https://github.com/mui-org/material-ui/issues/10076\#issuecomment-361232810" %}
 
+## Tooltip
+
+on component
+
+{% embed url="https://material-ui.com/components/tooltips/" %}
+
 
 
