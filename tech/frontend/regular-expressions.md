@@ -33,3 +33,9 @@
 | [Conditional](https://www.regular-expressions.info/conditional.html) | \(?\(+1\)then\|else\) where 1 is the number of a capturing group and then and else are any valid regexes | The + is ignored and the number is taken as an absolute reference to a capturing group. If the referenced capturing group took part in the match attempt thus far, the “then” part must match for the overall regex to match. If the capturing group did not take part in the match thus far, the “else” part must match for the overall regex to match. | \(a\)?\(?\(+1\)b\|c\) matches ab, the first c, and the second c in babxcac | no | no |
 | Feature | Syntax | Description | Example | [JGsoft](https://www.regular-expressions.info/jgsoft.html) | [.NET](https://www.regular-expressions.info/dotnet.html) |
 
+## Counter
+
+{% embed url="https://stackoverflow.com/questions/4213800/is-there-something-like-a-counter-variable-in-regular-expression-replace/4214173" %}
+
+
+
