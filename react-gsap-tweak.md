@@ -1496,5 +1496,13 @@ Scrollmagic advanced tweening
 
 {% embed url="https://scrollmagic.io/examples/advanced/advanced\_tweening.html" %}
 
+## Responsive to window resize
+
+{% embed url="https://github.com/janpaepke/ScrollMagic/issues/312" %}
+
+## Get whether the bottom was reached
+
+{% embed url="https://stackoverflow.com/questions/53158796/get-scroll-position-with-reactjs" %}
+
 
 
