@@ -95,7 +95,7 @@ This is what I use for a Mixin with sass, it allows me to quickly reference the 
 
 But it will jin multiple queries for you as I believe you're asking for.
 
-```text
+```css
 $size__site_content_width: 1024px;
 
 /* Media Queries */ Not necessarily correct, edit these at will 
@@ -129,7 +129,7 @@ $media_queries : (
 
 Use it like this in your scss:
 
-```text
+```css
 #masthead {
     background: white;
     border-bottom:1px solid #eee;
@@ -146,7 +146,7 @@ Use it like this in your scss:
 
 Then this will compile to:
 
-```text
+```css
 #masthead { 
   background: white;
   border-bottom: 1px solid #eee;
