@@ -1,6 +1,6 @@
 # 个人网站
 
-神Nginx配置奇的
+神奇的Nginx配置
 
 ```text
  24           location / { 
