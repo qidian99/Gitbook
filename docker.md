@@ -50,6 +50,12 @@ constraints like "^2.0@dev" in unrelated projects
 
 {% embed url="https://cloud.tencent.com/developer/article/1365676" %}
 
+## Clean up
+
+{% embed url="https://vsupalov.com/cleaning-up-after-docker/" %}
+
+
+
 ## Credentials
 
 `drush site:install`
