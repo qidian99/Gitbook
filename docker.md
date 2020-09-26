@@ -4,6 +4,34 @@ I’m planning to merge all the modules in develop branch and tag it as mileston
 
 I will make other GitHub repositories that they will be working on, and set up task management directly in GitHub.
 
+## Drupal installation
+
+`composer create-project drupal-composer/drupal-project:7.x-dev freshd7_dir`  
+ 
+
+Creates a drupal 7 site using latest version and puts the site in web directory inside of freshd7\_dir leaving drush, scripts, vendor, composer.json, composer.lock outside of document root.
+
+**Composer error:**
+
+constraints like "^2.0@dev" in unrelated projects
+
+**Fix:**
+
+{% embed url="https://github.com/composer/composer/issues/9191" %}
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>A temporary fix for broken builds is to make the following setting in
+          your pipelines:</p>
+        <p>composer self-update 1.10.10</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
 
 
 ## Set up docker image
@@ -18,5 +46,9 @@ I will make other GitHub repositories that they will be working on, and set up t
 
 {% embed url="https://cloud.tencent.com/developer/article/1365676" %}
 
+## Credentials
 
+`drush site:install`
+
+Installation complete. User name: admin User password: B6USGNUxcz \[ok\]
 
