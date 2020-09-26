@@ -4,6 +4,16 @@ I’m planning to merge all the modules in develop branch and tag it as mileston
 
 I will make other GitHub repositories that they will be working on, and set up task management directly in GitHub.
 
+
+
+{% embed url="https://zhuanlan.zhihu.com/p/23599229" %}
+
+{% embed url="https://zhuanlan.zhihu.com/p/23630443" %}
+
+{% embed url="https://juejin.im/post/6844903825816420360" %}
+
+
+
 ## Other
 
 sudo vim /etc/apache2/httpd.conf, commenting out php7
@@ -54,6 +64,14 @@ constraints like "^2.0@dev" in unrelated projects
 
 {% embed url="https://vsupalov.com/cleaning-up-after-docker/" %}
 
+## Saved my day!!!!
+
+{% embed url="https://stackoverflow.com/questions/54085295/drupal-8-is-not-connecting-to-mysql-in-docker" %}
+
+## Pre-built
+
+{% embed url="https://stackoverflow.com/questions/29145370/how-can-i-initialize-a-mysql-database-with-schema-in-a-docker-container" %}
+
 
 
 ## Credentials
@@ -61,4 +79,6 @@ constraints like "^2.0@dev" in unrelated projects
 `drush site:install`
 
 Installation complete. User name: admin User password: B6USGNUxcz \[ok\]
+
+Installation complete. User name: admin User password: \[ok\] czZfpWYzRp
 
