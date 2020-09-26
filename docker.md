@@ -4,6 +4,10 @@ I’m planning to merge all the modules in develop branch and tag it as mileston
 
 I will make other GitHub repositories that they will be working on, and set up task management directly in GitHub.
 
+## Other
+
+sudo vim /etc/apache2/httpd.conf, commenting out php7
+
 ## Drupal installation
 
 `composer create-project drupal-composer/drupal-project:7.x-dev freshd7_dir`  
