@@ -62,6 +62,10 @@ constraints like "^2.0@dev" in unrelated projects
 
 ## Clean up
 
+```text
+$ docker-compose down -v --rmi all --remove-orphans
+```
+
 {% embed url="https://vsupalov.com/cleaning-up-after-docker/" %}
 
 ## Saved my day!!!!
