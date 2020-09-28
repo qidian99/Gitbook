@@ -46,6 +46,10 @@ I locate the mysqladmin under the mysql location, close the mysql service, sudo 
 GRANT ALL ON example_database.* TO 'example_user'@'%';
 ```
 
+## Sharding
+
+{% embed url="https://blog.csdn.net/bluishglc/article/details/7696085" %}
+
 
 
 
