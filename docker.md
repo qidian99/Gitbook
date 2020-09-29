@@ -76,6 +76,12 @@ $ docker-compose down -v --rmi all --remove-orphans
 
 {% embed url="https://stackoverflow.com/questions/29145370/how-can-i-initialize-a-mysql-database-with-schema-in-a-docker-container" %}
 
+{% embed url="https://github.com/nodejs/docker-node/issues/1005" %}
+
+{% embed url="https://stackoverflow.com/questions/38164939/can-we-mount-sub-directories-of-a-named-volume-in-docker" %}
+
+{% embed url="https://blog.dcycle.com/blog/113/using-docker-evaluate-patch-or-develop-drupal-modules/" %}
+
 
 
 ## Credentials
