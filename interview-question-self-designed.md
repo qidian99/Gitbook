@@ -220,3 +220,187 @@ public class Solution {
 }
 ```
 
+## Ebay
+
+### **countOccurences**
+
+```java
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  /*
+   * Constraint: 0 <= n <= 1000
+   * Write your solution here.
+   */
+  public static int countOccurences(int n) {
+    
+    int count = 1;
+    
+    for (int i = 1; i <= n; i++) {
+      count += countOccurence(i); 
+    }
+    
+    return count;
+  }
+  
+  public static int countOccurence(int n) {
+    // store the remainder after right shift by 1 bit
+    int remain = n;
+    int count = 0;
+    
+    
+    int lastDigit;
+    while (remain != 0) {
+      // get the last digit
+      lastDigit = remain % 10;
+      
+      // conditions to increment
+      if (lastDigit == 0 || lastDigit == 2 || lastDigit == 4) {
+        count++;
+      }
+      
+      // right shift
+      remain = remain / 10;
+    }
+    return count;
+  }
+  
+  
+  public static void main(String[] args) {
+    
+    System.out.println(countOccurences(14));
+    System.out.println(countOccurences(22));
+    System.out.println(countOccurences(128));
+  }
+}
+```
+
+```java
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  /*
+   * Write your solution here.
+   */
+  public static int countOccurences(int n) {
+    
+    
+  }
+  public static void main(String[] args) {
+    ArrayList<String> strings = new ArrayList<String>();
+    strings.add("Hello, World!");
+    strings.add("Please put code below");
+    for (String string : strings) {
+      System.out.println(string);
+    }
+  }
+}
+```
+
+### **restoreNumbersOnCircle**
+
+```java
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  /*
+   * Constraint: 0 <= n <= 1000
+   * Write your solution here.
+   */
+  public static List<Integer> restoreNumbersOnCircle(List<List<Integer>> pairs) {
+    List<Integer> result = new ArrayList<>();
+    return result;
+  }
+ 
+  
+  public static void main(String[] args) {
+    List<List<Integer>> pairs = Arrays.asList(
+      Arrays.asList(3, 5),
+      Arrays.asList(1, 4),
+      Arrays.asList(2, 4),
+      Arrays.asList(1, 5),
+      Arrays.asList(2, 3)
+    );
+    List<Integer> result = restoreNumbersOnCircle(pairs);
+    
+    for (int num: result) {
+      System.out.println(num);
+    }
+  }
+}
+```
+
+```java
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  /*
+   * Constraint: 0 <= n <= 1000
+   * Write your solution here.
+   */
+  public static int[] restoreNumbersOnCircle(int[][] pairs) {
+    
+    int n = pairs.length;
+    
+    if (n == 0) return new int[0];
+    
+    int[] result = new int[n];
+    
+    // forward map: arr[1] -> arr[2]    
+    // reverse map: arr[2] -> arr[1]
+    Map<Integer, Integer> forwardMap = new HashMap<>();
+    Set<Integer> values = new HashSet<>();
+    
+    // loop and populate
+    for (int[] pair: pairs) {
+      int first = pair[0];
+      int second = pair[1];
+      
+      if (forwardMap.getOrDefault(first, null) == null && !values.contains(second)) {
+        forwardMap.put(first, second);
+        values.add(second);
+      } else {
+        forwardMap.put(second, first);   
+        values.add(first);
+      }
+    }
+    
+    // System.out.println(forwardMap.size());
+    // System.out.println(backwardMap.size());
+    
+    int i = 0;
+    int curr = pairs[0][0];
+    while (i < n) {
+      int temp;
+      temp = forwardMap.get(curr);  
+      result[i++] = curr;
+      curr = temp;
+    }
+    
+    return result;
+  }
+ 
+  
+  public static void main(String[] args) {
+    int[][] pairs = {
+      {3, 5},
+      {1, 4},
+      {2, 4},
+      {1, 5},
+      {2, 3},
+    };
+    int[] result = restoreNumbersOnCircle(pairs);
+    
+    for (int num: result) {
+      System.out.println(num);
+    }
+    
+    // Should be [3, 5, 1, 4, 2]
+  }
+}
+```
+
