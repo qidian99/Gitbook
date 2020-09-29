@@ -68,6 +68,14 @@ $ docker-compose down -v --rmi all --remove-orphans
 
 {% embed url="https://vsupalov.com/cleaning-up-after-docker/" %}
 
+Database
+
+
+
+{% embed url="https://github.com/Radu-Raicea/Dockerized-Flask/wiki/%5BDocker%5D-Remove-all-Docker-volumes-to-delete-the-database" %}
+
+
+
 ## Saved my day!!!!
 
 {% embed url="https://stackoverflow.com/questions/54085295/drupal-8-is-not-connecting-to-mysql-in-docker" %}
