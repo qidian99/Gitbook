@@ -274,7 +274,7 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
 
 ![](.gitbook/assets/image%20%2863%29.png)
 
-
+![](.gitbook/assets/image%20%2864%29.png)
 
 ## VueJS \(Quasar\)
 
