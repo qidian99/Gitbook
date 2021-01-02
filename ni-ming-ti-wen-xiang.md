@@ -300,26 +300,31 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
                   1. `func Join(a []string, sep string) string`
                   2. 
             6. `newDeckFromFile()`: Build a deck from a file on the local machine
-   9. Testing
+   9. Channel
+      1. Go routines
+      2. Concurrency is not parallelism
+         1. concurrent: has the ability to many go routine kind of at the same time, even it's on a single CPU core
+         2. parallelism: run multiple go routines at the same time
+   10. Testing
 
-      1. To make a test, create a new file ending in \_test.go
-      2. To run all tests, run `go test`
+       1. To make a test, create a new file ending in \_test.go
+       2. To run all tests, run `go test`
 
-      ```go
-      package main
+       ```go
+       package main
 
-      import "testing"
+       import "testing"
 
-      func TestNewDeck(t *testing.T) {
-      	d := newDeck()
+       func TestNewDeck(t *testing.T) {
+       	d := newDeck()
 
-      	if len(d) != 2000 {
-      		t.Errorf("Expected deck length of 20, but got %v", len(d))
-      	}
-      }
-      ```
+       	if len(d) != 2000 {
+       		t.Errorf("Expected deck length of 20, but got %v", len(d))
+       	}
+       }
+       ```
 
-   10. Pointers
+   11. Pointers
        1. Go passes by value
        2. Gotchas
 
@@ -345,7 +350,7 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
           }
 
           ```
-   11. Misc
+   12. Misc
 
        ```go
        fmt.Printf("%+v", person) // every key + value, e.g., {firstName:a lastName:b}
