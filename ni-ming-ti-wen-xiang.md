@@ -136,7 +136,25 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
             card[3:]
             ```
       2. Struct
-      3. 
+         1. Type definition
+
+            ```go
+            type Person struct {
+            	firstName string
+            	lastName  string
+            }
+            ```
+
+         2. Instantiation
+
+            ```go
+            person := Person{
+                firstName: "a",
+                lastName:  "b",
+            }
+
+            	person := Person{"a", "b"}
+            ```
    7. Types
       1. Basic Go Types: string, integer, float, array, map
       2. Extend a base type and add some extras functionalities to it
