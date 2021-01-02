@@ -359,9 +359,20 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
 3. 
 ## Golang Q&A
 
-![](.gitbook/assets/image%20%2863%29.png)
-
 ![](.gitbook/assets/image%20%2864%29.png)
+
+![](.gitbook/assets/image%20%2865%29.png)
+
+![](.gitbook/assets/image%20%2862%29.png)
+
+```go
+	c := make(chan string)
+	go func() {
+		c <- "Hi"
+	}()
+
+	fmt.Println(<-c)
+```
 
 ## VueJS \(Quasar\)
 
