@@ -83,25 +83,35 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
       go run/build main.go
       ```
 
-   5. Loop
+   5. Flow control
+      1. For loops
 
-      ```go
-      for idx, value := range list {
-          fmt.Println(idx, value)
-      }
-      ```
+         ```go
+         for idx, value := range list {
+             fmt.Println(idx, value)
+         }
+         ```
 
-      Ignore the index in iteration
 
-      ```go
-      for _, suit := range cardSuits {
-      	for _, value := range cardValues {
-      		// Create a new string
-      		cards = append(cards, value+" of "+suit)
-      	}
-      }
-      ```
 
+         Ignore the index in iteration
+
+         ```go
+         for _, suit := range cardSuits {
+         	for _, value := range cardValues {
+         		// Create a new string
+         		cards = append(cards, value+" of "+suit)
+         	}
+         }
+         ```
+
+         Loop for certain times
+
+         ```go
+         for i:=1; i<10; i++ {
+           // do something
+         }
+         ```
    6. Data Structure
       1. Slice
          1. Initialize
@@ -125,6 +135,8 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
 
             card[3:]
             ```
+      2. Struct
+      3. 
    7. Types
       1. Basic Go Types: string, integer, float, array, map
       2. Extend a base type and add some extras functionalities to it
@@ -171,21 +183,45 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
                1. No need to have receiver `blabla`.`method_name`
             2. `print()`: Log out the contents of a deck of cards
             3. `shuffle()`: Shuffles all the cards in a deck
+               1. rand package
+                  1. intn: not randomized correctly
+                  2. pseudonumber generator
+                     1. 
+               2. 
             4. `deal()`: Create a hand of cards
             5. `saveToFile()`: Save a list of cards to a file on the local machine
                1. Should make use of a built in package, `ioutil`: [https://golang.org/pkg/io/ioutil/](https://golang.org/pkg/io/ioutil/)
-               2. `WriteFile(filename string, data []byte, perm os.FileMode) error`
-                  1. What is a byte slice 
+                  1. `WriteFile(filename string, data []byte, perm os.FileMode) error`
+                     1. What is a byte slice 
+                     2. How to convert a slice of strings to a slice of bytes
+                        1. Type conversion
+               2. `strings`
+                  1. `func Join(a []string, sep string) string`
+                  2. 
             6. `newDeckFromFile()`: Build a deck from a file on the local machine
+   8. Testing
+
+      1. To make a test, create a new file ending in \_test.go
+      2. To run all tests, run `go test`
+
+      ```go
+      package main
+
+      import "testing"
+
+      func TestNewDeck(t *testing.T) {
+      	d := newDeck()
+
+      	if len(d) != 2000 {
+      		t.Errorf("Expected deck length of 20, but got %v", len(d))
+      	}
+      }
+      ```
 2. How to develop APIs using Go
 
-![Normal OO approach](.gitbook/assets/image%20%2862%29.png)
 
 
-
-
-
-### VueJS \(Quasar\)
+## VueJS \(Quasar\)
 
 1. How to develop responsive UI using VueJS
 2. 
