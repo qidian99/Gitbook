@@ -157,6 +157,7 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
             ```
    7. Types
       1. Basic Go Types: string, integer, float, array, map
+         1. Zero values: `string` "", `int` 0, `float` 0, `bool` false
       2. Extend a base type and add some extras functionalities to it
          1. type deck \[\]string
 
