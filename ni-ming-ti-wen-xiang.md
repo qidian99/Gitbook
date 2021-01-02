@@ -174,8 +174,9 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
             4. `deal()`: Create a hand of cards
             5. `saveToFile()`: Save a list of cards to a file on the local machine
                1. Should make use of a built in package, `ioutil`: [https://golang.org/pkg/io/ioutil/](https://golang.org/pkg/io/ioutil/)
-               2. `WriteFile(filename string, data []bypte, perm os.FileMode) error`
-            6. 
+               2. `WriteFile(filename string, data []byte, perm os.FileMode) error`
+                  1. What is a byte slice 
+            6. `newDeckFromFile()`: Build a deck from a file on the local machine
 2. How to develop APIs using Go
 
 ![Normal OO approach](.gitbook/assets/image%20%2862%29.png)
@@ -184,9 +185,9 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
 
 
 
-### Vue \(Quasar\)
+### VueJS \(Quasar\)
 
-1. How to develop responsive UI using Vue
+1. How to develop responsive UI using VueJS
 2. 
 ## APIs
 
