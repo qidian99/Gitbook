@@ -155,7 +155,89 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
 
             	person := Person{"a", "b"}
             ```
-   7. Types
+   7. Interface
+      1. Implication
+         1. To make function able to able various input types
+      2. Problem without interfaces
+
+         ```go
+         package main
+
+         import "fmt"
+
+         type englishBot struct {
+         	greeting string
+         }
+
+         type spanishBot struct {
+         	greeting string
+         }
+
+         func main() {
+
+         }
+
+         func (e englishBot) getGreeting() string {
+         	return e.greeting
+         }
+
+         func (s spanishBot) getGreeting() string {
+         	return s.greeting
+         }
+
+         func printGreeting(eb englishBot) {
+         	fmt.Println(eb.getGreeting())
+         }
+
+         func printGreeting(sb spanishBot) {
+         	fmt.Println(sb.getGreeting())
+         }
+         ```
+
+         ```go
+         package main
+
+         import "fmt"
+
+         type bot interface {
+         	getGreeting() string
+         }
+
+         type englishBot struct {
+         }
+
+         type spanishBot struct {
+         }
+
+         func main() {
+
+         	eb := englishBot{}
+         	sb := spanishBot{}
+
+         	printGreeting(eb)
+         	printGreeting(sb)
+
+         }
+
+         func (englishBot) getGreeting() string {
+         	return "Hi There!"
+         }
+
+         func (spanishBot) getGreeting() string {
+         	return "Hola"
+         }
+
+         func printGreeting(b bot) {
+         	fmt.Println(b.getGreeting())
+         }
+
+         ```
+
+      3. Interfaces are not generic types
+      4. Interfaces are implicit
+      5. Interfaces are a contract to help us manage types
+      6. Interfaces are tough
+   8. Types
       1. Basic Go Types: string, integer, float, array, map
          1. Zero values: `string` "", `int` 0, `float` 0, `bool` false
       2. Extend a base type and add some extras functionalities to it
@@ -218,7 +300,7 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
                   1. `func Join(a []string, sep string) string`
                   2. 
             6. `newDeckFromFile()`: Build a deck from a file on the local machine
-   8. Testing
+   9. Testing
 
       1. To make a test, create a new file ending in \_test.go
       2. To run all tests, run `go test`
@@ -237,33 +319,33 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
       }
       ```
 
-   9. Pointers
-      1. Go passes by value
-      2. Gotchas
+   10. Pointers
+       1. Go passes by value
+       2. Gotchas
 
-         ```go
-         package main
+          ```go
+          package main
 
-         import (
-         	"fmt"
-         )
+          import (
+          	"fmt"
+          )
 
-         func main() {
-         	fmt.Println("Hello, playground")
-         	mySlice := []string{"Hi","There", "How", "Are", "You"}
-         	updateSlice(mySlice)
-         	fmt.Println(mySlice)
+          func main() {
+          	fmt.Println("Hello, playground")
+          	mySlice := []string{"Hi","There", "How", "Are", "You"}
+          	updateSlice(mySlice)
+          	fmt.Println(mySlice)
 	
 	
-         }
+          }
 
 
-         func updateSlice(s []string) {
-         	s[0] = "Bye"
-         }
+          func updateSlice(s []string) {
+          	s[0] = "Bye"
+          }
 
-         ```
-   10. Misc
+          ```
+   11. Misc
 
        ```go
        fmt.Printf("%+v", person) // every key + value, e.g., {firstName:a lastName:b}
