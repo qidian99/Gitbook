@@ -236,7 +236,43 @@ Refer to the website [tapechat.net](https://www.tapechat.net/)
       	}
       }
       ```
+
+   9. Pointers
+      1. Go passes by value
+      2. Gotchas
+
+         ```go
+         package main
+
+         import (
+         	"fmt"
+         )
+
+         func main() {
+         	fmt.Println("Hello, playground")
+         	mySlice := []string{"Hi","There", "How", "Are", "You"}
+         	updateSlice(mySlice)
+         	fmt.Println(mySlice)
+	
+	
+         }
+
+
+         func updateSlice(s []string) {
+         	s[0] = "Bye"
+         }
+
+         ```
+   10. Misc
+
+       ```go
+       fmt.Printf("%+v", person) // every key + value, e.g., {firstName:a lastName:b}
+       ```
 2. How to develop APIs using Go
+3. 
+## Golang Q&A
+
+![](.gitbook/assets/image%20%2863%29.png)
 
 
 
