@@ -9,6 +9,7 @@
 * [UCSD CSE112](courses/ucsd-cse112.md)
 * [UCSD CSE134B \(Done\)](courses/ucsd-cse-134b-done.md)
 * [UCSD CSE135 \(Done\)](courses/ucsd-cse135.md)
+* [UCSD DSC 102](courses/dsc-102.md)
 
 ## Readings
 
@@ -97,5 +98,4 @@
 * [匿名提问箱](ni-ming-ti-wen-xiang.md)
 * [Plans](plans.md)
 * [Winter 2021](winter-2021.md)
-* [DSC 102](dsc-102.md)
 
