@@ -29,11 +29,23 @@
 
 
 1. **Sleep, Eat, Exercise**
-2. Don't be hard in yourself. Don't try to control everything. Just leave the doors open. 但是要be prepared
+2. Don't be hard in yourself. Don't try to **control** everything. Just leave the doors open. 但是要be prepared
 3. Meditation
 4. Reach small goals one at a time
 5. Be optimistic
 6. 先去FBI Cybersecurity，再去NBC News当播报员，又去拍电影，然后因为父母的原因又搬回SD，和大叔一起学习网络。
-7. 
+7. Enjoy
+
+
+
+1. 学车、保险、运动、兴趣、文化、英语
+2. 学习、算法、读书、上课
+   1. 数据库
+   2. s
+
+
+
+
+
 
 
