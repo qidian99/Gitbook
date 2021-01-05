@@ -24,3 +24,16 @@
    2. Trigger a transform from unix time to date time when a insert/update happens
 9. Inline file in browser: In a regular HTTP response, the **`Content-Disposition`** response header is a header indicating if the content is expected to be displayed _inline_ in the browser, that is, as a Web page or as part of a Web page, or as an _attachment_, that is downloaded and saved locally.
 
+
+
+
+
+1. **Sleep, Eat, Exercise**
+2. Don't be hard in yourself. Don't try to control everything. Just leave the doors open. 但是要be prepared
+3. Meditation
+4. Reach small goals one at a time
+5. Be optimistic
+6. 先去FBI Cybersecurity，再去NBC News当播报员，又去拍电影，然后因为父母的原因又搬回SD，和大叔一起学习网络。
+7. 
+
+
