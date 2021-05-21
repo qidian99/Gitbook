@@ -4,6 +4,7 @@
 
 ## 自学课程 <a id="courses"></a>
 
+* [CMU 15-445/645](courses/cmu-15-445-645.md)
 * [CMU 15-721 \(Done\)](courses/cmu-15-721.md)
 * [UCSD CSE132C](courses/ucsd-cse132c.md)
 * [UCSD CSE112](courses/ucsd-cse112.md)
@@ -13,6 +14,8 @@
 
 ## Readings
 
+* [Database System Concepts](readings/database-system-concepts.md)
+* [高性能MySQL](readings/gao-xing-neng-mysql.md)
 * [The Design of Everyday Things \(Done\)](readings/the-design-of-everyday-things.md)
 * [Zero to One \(Done\)](readings/zero-to-one.md)
 * [Drupal 7 Module Development \(Done\)](readings/drupal-7-module-development.md)
